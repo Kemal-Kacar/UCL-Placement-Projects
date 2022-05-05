@@ -4,27 +4,18 @@ import pandas as pd
 from pathlib import Path
 import csv
 import json
-import matplotlib.pyplot as plt
-import matplotlib.animation as animation
 
+# all in one big package that has everything, mo-cap to frame data, to organising all data, to b a r s i n g. 
 
-fig = plt.figure()
-ax = fig.add_subplot(1, 1, 1)
-xs = []
-ys = []
+# mediapipe stuff, dependencies.
 mp_drawing = mp.solutions.drawing_utils
 mp_drawing_styles = mp.solutions.drawing_styles
 mp_pose = mp.solutions.pose
 frameCounter = 0
+# the video file. Just change the "" area.
 videoFile = "sub-002_ses-002_task-hokey_cokey_run-005_video.mp4"
 
-
-def animate(i, xs, ys):
-    x_plt = float(landmark["x"])
-    y_plt = float(landmark["y"])
-    z_plt = float(landmark["z"])
-
-
+# change the () area to 0 if you want to use actual camera (in order of computer camera).
 cap = cv2.VideoCapture(videoFile)
 with mp_pose.Pose(min_detection_confidence=0.8, min_tracking_confidence=0.8) as pose:
     while cap.isOpened():
@@ -99,9 +90,40 @@ with open("cords_tracker.csv") as data:
     sort = df.sort_values(["landmark"])
     sort.to_csv("sorted_landmark.csv", index=False)
 
-startingLm = 0
+sig_list = []
+# opens the sorted file and extracts the landmark and distance information.
+curLM = 0
 with open("sorted_landmark.csv") as tbPlot:
-    for landmark in tbPlot[0]:
-        if startingLm < 33:
-            while landmark == startingLm:
-                plt.plot(tbPlot["distance"])
+    df = pd.read_csv(tbPlot, usecols=["landmark", "distance"])
+    # for each landmark creates a CSV file.
+    while curLM < 33:
+        lm = df.query("landmark == "+str(curLM))
+        lmFilePath = Path("Landmark_CSVs/Landmark" + str(curLM) + ".csv")
+        lmDF = lm.to_csv(lmFilePath, index=False)
+        curLM += 1
+
+# From the create CSV files takes distance information.
+fileLM = 0
+while fileLM < 33:
+    with open("Landmark_CSVs/Landmark"+str(fileLM)+".csv") as f:
+        testdf = pd.read_csv(f, usecols=["distance"])
+        # creates a list of the distance data.
+        new_list = list(testdf.distance)
+        # takes the mean score of the distance data.
+        dist_mean = float(testdf.mean(axis=0))
+        sig_list = []
+    # reads the landmarks again for pandas reasons.
+    with open("Landmark_CSVs/Landmark"+str(fileLM)+".csv") as g:
+        sigDF = pd.read_csv(g)
+        # conditionally checks the distance information and compares with the mean score.
+        # if bigger than mean, that means a significant movement has occurred.
+        for dist in new_list:
+            if dist < dist_mean:
+                sig_list.append(0)
+            else:
+                sig_list.append(1)
+        sigDF['significance'] = sig_list
+        sigDF.append(sig_list)
+        # writes back the significance values onto the original landmark data.
+        sigDF.to_csv("Landmark_CSVs/Landmark"+str(fileLM)+".csv", index=False)
+        fileLM += 1
