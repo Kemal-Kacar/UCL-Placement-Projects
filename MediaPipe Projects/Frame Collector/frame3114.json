@@ -1,0 +1,2809 @@
+{
+ "0":{
+  "0":{
+   "DESCRIPTOR":{
+    "containing_type":null,
+    "enum_types":{
+
+    },
+    "enum_types_by_name":{
+
+    },
+    "enum_values_by_name":{
+
+    },
+    "extension_ranges":[
+
+    ],
+    "extensions":{
+
+    },
+    "extensions_by_name":{
+
+    },
+    "fields":{
+
+    },
+    "fields_by_camelcase_name":{
+
+    },
+    "fields_by_name":{
+
+    },
+    "fields_by_number":{
+
+    },
+    "file":{
+     "dependencies":{
+
+     },
+     "enum_types_by_name":{
+
+     },
+     "extensions_by_name":{
+
+     },
+     "has_options":true,
+     "message_types_by_name":{
+
+     },
+     "name":"mediapipe\/framework\/formats\/landmark.proto",
+     "package":"mediapipe",
+     "pool":{
+
+     },
+     "public_dependencies":{
+
+     },
+     "serialized_pb":"\n*mediapipe\/framework\/formats\/landmark.proto\u0012\tmediapipe\"Q\n\bLandmark\u0012\t\n\u0001x\u0018\u0001 \u0001(\u0002\u0012\t\n\u0001y\u0018\u0002 \u0001(\u0002\u0012\t\n\u0001z\u0018\u0003 \u0001(\u0002\u0012\u0012\n\nvisibility\u0018\u0004 \u0001(\u0002\u0012\u0010\n\bpresence\u0018\u0005 \u0001(\u0002\"5\n\fLandmarkList\u0012%\n\blandmark\u0018\u0001 \u0003(\u000b2\u0013.mediapipe.Landmark\"H\n\u0016LandmarkListCollection\u0012.\n\rlandmark_list\u0018\u0001 \u0003(\u000b2\u0017.mediapipe.LandmarkList\"[\n\u0012NormalizedLandmark\u0012\t\n\u0001x\u0018\u0001 \u0001(\u0002\u0012\t\n\u0001y\u0018\u0002 \u0001(\u0002\u0012\t\n\u0001z\u0018\u0003 \u0001(\u0002\u0012\u0012\n\nvisibility\u0018\u0004 \u0001(\u0002\u0012\u0010\n\bpresence\u0018\u0005 \u0001(\u0002\"I\n\u0016NormalizedLandmarkList\u0012\/\n\blandmark\u0018\u0001 \u0003(\u000b2\u001d.mediapipe.NormalizedLandmark\"\\\n NormalizedLandmarkListCollection\u00128\n\rlandmark_list\u0018\u0001 \u0003(\u000b2!.mediapipe.NormalizedLandmarkListB3\n\"com.google.mediapipe.formats.protoB\rLandmarkProto",
+     "services_by_name":{
+
+     },
+     "syntax":"proto2"
+    },
+    "full_name":"mediapipe.Landmark",
+    "has_options":false,
+    "is_extendable":false,
+    "name":"Landmark",
+    "nested_types":{
+
+    },
+    "nested_types_by_name":{
+
+    },
+    "oneofs":{
+
+    },
+    "oneofs_by_name":{
+
+    },
+    "syntax":"proto2"
+   },
+   "presence":0.0,
+   "visibility":0.9999837279,
+   "x":0.004426158,
+   "y":-0.5850023627,
+   "z":-0.3753738999
+  },
+  "1":{
+   "DESCRIPTOR":{
+    "containing_type":null,
+    "enum_types":{
+
+    },
+    "enum_types_by_name":{
+
+    },
+    "enum_values_by_name":{
+
+    },
+    "extension_ranges":[
+
+    ],
+    "extensions":{
+
+    },
+    "extensions_by_name":{
+
+    },
+    "fields":{
+
+    },
+    "fields_by_camelcase_name":{
+
+    },
+    "fields_by_name":{
+
+    },
+    "fields_by_number":{
+
+    },
+    "file":{
+     "dependencies":{
+
+     },
+     "enum_types_by_name":{
+
+     },
+     "extensions_by_name":{
+
+     },
+     "has_options":true,
+     "message_types_by_name":{
+
+     },
+     "name":"mediapipe\/framework\/formats\/landmark.proto",
+     "package":"mediapipe",
+     "pool":{
+
+     },
+     "public_dependencies":{
+
+     },
+     "serialized_pb":"\n*mediapipe\/framework\/formats\/landmark.proto\u0012\tmediapipe\"Q\n\bLandmark\u0012\t\n\u0001x\u0018\u0001 \u0001(\u0002\u0012\t\n\u0001y\u0018\u0002 \u0001(\u0002\u0012\t\n\u0001z\u0018\u0003 \u0001(\u0002\u0012\u0012\n\nvisibility\u0018\u0004 \u0001(\u0002\u0012\u0010\n\bpresence\u0018\u0005 \u0001(\u0002\"5\n\fLandmarkList\u0012%\n\blandmark\u0018\u0001 \u0003(\u000b2\u0013.mediapipe.Landmark\"H\n\u0016LandmarkListCollection\u0012.\n\rlandmark_list\u0018\u0001 \u0003(\u000b2\u0017.mediapipe.LandmarkList\"[\n\u0012NormalizedLandmark\u0012\t\n\u0001x\u0018\u0001 \u0001(\u0002\u0012\t\n\u0001y\u0018\u0002 \u0001(\u0002\u0012\t\n\u0001z\u0018\u0003 \u0001(\u0002\u0012\u0012\n\nvisibility\u0018\u0004 \u0001(\u0002\u0012\u0010\n\bpresence\u0018\u0005 \u0001(\u0002\"I\n\u0016NormalizedLandmarkList\u0012\/\n\blandmark\u0018\u0001 \u0003(\u000b2\u001d.mediapipe.NormalizedLandmark\"\\\n NormalizedLandmarkListCollection\u00128\n\rlandmark_list\u0018\u0001 \u0003(\u000b2!.mediapipe.NormalizedLandmarkListB3\n\"com.google.mediapipe.formats.protoB\rLandmarkProto",
+     "services_by_name":{
+
+     },
+     "syntax":"proto2"
+    },
+    "full_name":"mediapipe.Landmark",
+    "has_options":false,
+    "is_extendable":false,
+    "name":"Landmark",
+    "nested_types":{
+
+    },
+    "nested_types_by_name":{
+
+    },
+    "oneofs":{
+
+    },
+    "oneofs_by_name":{
+
+    },
+    "syntax":"proto2"
+   },
+   "presence":0.0,
+   "visibility":0.999935329,
+   "x":0.006648384,
+   "y":-0.6236404777,
+   "z":-0.3618343771
+  },
+  "2":{
+   "DESCRIPTOR":{
+    "containing_type":null,
+    "enum_types":{
+
+    },
+    "enum_types_by_name":{
+
+    },
+    "enum_values_by_name":{
+
+    },
+    "extension_ranges":[
+
+    ],
+    "extensions":{
+
+    },
+    "extensions_by_name":{
+
+    },
+    "fields":{
+
+    },
+    "fields_by_camelcase_name":{
+
+    },
+    "fields_by_name":{
+
+    },
+    "fields_by_number":{
+
+    },
+    "file":{
+     "dependencies":{
+
+     },
+     "enum_types_by_name":{
+
+     },
+     "extensions_by_name":{
+
+     },
+     "has_options":true,
+     "message_types_by_name":{
+
+     },
+     "name":"mediapipe\/framework\/formats\/landmark.proto",
+     "package":"mediapipe",
+     "pool":{
+
+     },
+     "public_dependencies":{
+
+     },
+     "serialized_pb":"\n*mediapipe\/framework\/formats\/landmark.proto\u0012\tmediapipe\"Q\n\bLandmark\u0012\t\n\u0001x\u0018\u0001 \u0001(\u0002\u0012\t\n\u0001y\u0018\u0002 \u0001(\u0002\u0012\t\n\u0001z\u0018\u0003 \u0001(\u0002\u0012\u0012\n\nvisibility\u0018\u0004 \u0001(\u0002\u0012\u0010\n\bpresence\u0018\u0005 \u0001(\u0002\"5\n\fLandmarkList\u0012%\n\blandmark\u0018\u0001 \u0003(\u000b2\u0013.mediapipe.Landmark\"H\n\u0016LandmarkListCollection\u0012.\n\rlandmark_list\u0018\u0001 \u0003(\u000b2\u0017.mediapipe.LandmarkList\"[\n\u0012NormalizedLandmark\u0012\t\n\u0001x\u0018\u0001 \u0001(\u0002\u0012\t\n\u0001y\u0018\u0002 \u0001(\u0002\u0012\t\n\u0001z\u0018\u0003 \u0001(\u0002\u0012\u0012\n\nvisibility\u0018\u0004 \u0001(\u0002\u0012\u0010\n\bpresence\u0018\u0005 \u0001(\u0002\"I\n\u0016NormalizedLandmarkList\u0012\/\n\blandmark\u0018\u0001 \u0003(\u000b2\u001d.mediapipe.NormalizedLandmark\"\\\n NormalizedLandmarkListCollection\u00128\n\rlandmark_list\u0018\u0001 \u0003(\u000b2!.mediapipe.NormalizedLandmarkListB3\n\"com.google.mediapipe.formats.protoB\rLandmarkProto",
+     "services_by_name":{
+
+     },
+     "syntax":"proto2"
+    },
+    "full_name":"mediapipe.Landmark",
+    "has_options":false,
+    "is_extendable":false,
+    "name":"Landmark",
+    "nested_types":{
+
+    },
+    "nested_types_by_name":{
+
+    },
+    "oneofs":{
+
+    },
+    "oneofs_by_name":{
+
+    },
+    "syntax":"proto2"
+   },
+   "presence":0.0,
+   "visibility":0.999941051,
+   "x":0.0070468956,
+   "y":-0.6239455938,
+   "z":-0.3611468077
+  },
+  "3":{
+   "DESCRIPTOR":{
+    "containing_type":null,
+    "enum_types":{
+
+    },
+    "enum_types_by_name":{
+
+    },
+    "enum_values_by_name":{
+
+    },
+    "extension_ranges":[
+
+    ],
+    "extensions":{
+
+    },
+    "extensions_by_name":{
+
+    },
+    "fields":{
+
+    },
+    "fields_by_camelcase_name":{
+
+    },
+    "fields_by_name":{
+
+    },
+    "fields_by_number":{
+
+    },
+    "file":{
+     "dependencies":{
+
+     },
+     "enum_types_by_name":{
+
+     },
+     "extensions_by_name":{
+
+     },
+     "has_options":true,
+     "message_types_by_name":{
+
+     },
+     "name":"mediapipe\/framework\/formats\/landmark.proto",
+     "package":"mediapipe",
+     "pool":{
+
+     },
+     "public_dependencies":{
+
+     },
+     "serialized_pb":"\n*mediapipe\/framework\/formats\/landmark.proto\u0012\tmediapipe\"Q\n\bLandmark\u0012\t\n\u0001x\u0018\u0001 \u0001(\u0002\u0012\t\n\u0001y\u0018\u0002 \u0001(\u0002\u0012\t\n\u0001z\u0018\u0003 \u0001(\u0002\u0012\u0012\n\nvisibility\u0018\u0004 \u0001(\u0002\u0012\u0010\n\bpresence\u0018\u0005 \u0001(\u0002\"5\n\fLandmarkList\u0012%\n\blandmark\u0018\u0001 \u0003(\u000b2\u0013.mediapipe.Landmark\"H\n\u0016LandmarkListCollection\u0012.\n\rlandmark_list\u0018\u0001 \u0003(\u000b2\u0017.mediapipe.LandmarkList\"[\n\u0012NormalizedLandmark\u0012\t\n\u0001x\u0018\u0001 \u0001(\u0002\u0012\t\n\u0001y\u0018\u0002 \u0001(\u0002\u0012\t\n\u0001z\u0018\u0003 \u0001(\u0002\u0012\u0012\n\nvisibility\u0018\u0004 \u0001(\u0002\u0012\u0010\n\bpresence\u0018\u0005 \u0001(\u0002\"I\n\u0016NormalizedLandmarkList\u0012\/\n\blandmark\u0018\u0001 \u0003(\u000b2\u001d.mediapipe.NormalizedLandmark\"\\\n NormalizedLandmarkListCollection\u00128\n\rlandmark_list\u0018\u0001 \u0003(\u000b2!.mediapipe.NormalizedLandmarkListB3\n\"com.google.mediapipe.formats.protoB\rLandmarkProto",
+     "services_by_name":{
+
+     },
+     "syntax":"proto2"
+    },
+    "full_name":"mediapipe.Landmark",
+    "has_options":false,
+    "is_extendable":false,
+    "name":"Landmark",
+    "nested_types":{
+
+    },
+    "nested_types_by_name":{
+
+    },
+    "oneofs":{
+
+    },
+    "oneofs_by_name":{
+
+    },
+    "syntax":"proto2"
+   },
+   "presence":0.0,
+   "visibility":0.9999423027,
+   "x":0.007039058,
+   "y":-0.6244595051,
+   "z":-0.3611640632
+  },
+  "4":{
+   "DESCRIPTOR":{
+    "containing_type":null,
+    "enum_types":{
+
+    },
+    "enum_types_by_name":{
+
+    },
+    "enum_values_by_name":{
+
+    },
+    "extension_ranges":[
+
+    ],
+    "extensions":{
+
+    },
+    "extensions_by_name":{
+
+    },
+    "fields":{
+
+    },
+    "fields_by_camelcase_name":{
+
+    },
+    "fields_by_name":{
+
+    },
+    "fields_by_number":{
+
+    },
+    "file":{
+     "dependencies":{
+
+     },
+     "enum_types_by_name":{
+
+     },
+     "extensions_by_name":{
+
+     },
+     "has_options":true,
+     "message_types_by_name":{
+
+     },
+     "name":"mediapipe\/framework\/formats\/landmark.proto",
+     "package":"mediapipe",
+     "pool":{
+
+     },
+     "public_dependencies":{
+
+     },
+     "serialized_pb":"\n*mediapipe\/framework\/formats\/landmark.proto\u0012\tmediapipe\"Q\n\bLandmark\u0012\t\n\u0001x\u0018\u0001 \u0001(\u0002\u0012\t\n\u0001y\u0018\u0002 \u0001(\u0002\u0012\t\n\u0001z\u0018\u0003 \u0001(\u0002\u0012\u0012\n\nvisibility\u0018\u0004 \u0001(\u0002\u0012\u0010\n\bpresence\u0018\u0005 \u0001(\u0002\"5\n\fLandmarkList\u0012%\n\blandmark\u0018\u0001 \u0003(\u000b2\u0013.mediapipe.Landmark\"H\n\u0016LandmarkListCollection\u0012.\n\rlandmark_list\u0018\u0001 \u0003(\u000b2\u0017.mediapipe.LandmarkList\"[\n\u0012NormalizedLandmark\u0012\t\n\u0001x\u0018\u0001 \u0001(\u0002\u0012\t\n\u0001y\u0018\u0002 \u0001(\u0002\u0012\t\n\u0001z\u0018\u0003 \u0001(\u0002\u0012\u0012\n\nvisibility\u0018\u0004 \u0001(\u0002\u0012\u0010\n\bpresence\u0018\u0005 \u0001(\u0002\"I\n\u0016NormalizedLandmarkList\u0012\/\n\blandmark\u0018\u0001 \u0003(\u000b2\u001d.mediapipe.NormalizedLandmark\"\\\n NormalizedLandmarkListCollection\u00128\n\rlandmark_list\u0018\u0001 \u0003(\u000b2!.mediapipe.NormalizedLandmarkListB3\n\"com.google.mediapipe.formats.protoB\rLandmarkProto",
+     "services_by_name":{
+
+     },
+     "syntax":"proto2"
+    },
+    "full_name":"mediapipe.Landmark",
+    "has_options":false,
+    "is_extendable":false,
+    "name":"Landmark",
+    "nested_types":{
+
+    },
+    "nested_types_by_name":{
+
+    },
+    "oneofs":{
+
+    },
+    "oneofs_by_name":{
+
+    },
+    "syntax":"proto2"
+   },
+   "presence":0.0,
+   "visibility":0.9999304414,
+   "x":-0.0248505641,
+   "y":-0.6162220836,
+   "z":-0.3588452339
+  },
+  "5":{
+   "DESCRIPTOR":{
+    "containing_type":null,
+    "enum_types":{
+
+    },
+    "enum_types_by_name":{
+
+    },
+    "enum_values_by_name":{
+
+    },
+    "extension_ranges":[
+
+    ],
+    "extensions":{
+
+    },
+    "extensions_by_name":{
+
+    },
+    "fields":{
+
+    },
+    "fields_by_camelcase_name":{
+
+    },
+    "fields_by_name":{
+
+    },
+    "fields_by_number":{
+
+    },
+    "file":{
+     "dependencies":{
+
+     },
+     "enum_types_by_name":{
+
+     },
+     "extensions_by_name":{
+
+     },
+     "has_options":true,
+     "message_types_by_name":{
+
+     },
+     "name":"mediapipe\/framework\/formats\/landmark.proto",
+     "package":"mediapipe",
+     "pool":{
+
+     },
+     "public_dependencies":{
+
+     },
+     "serialized_pb":"\n*mediapipe\/framework\/formats\/landmark.proto\u0012\tmediapipe\"Q\n\bLandmark\u0012\t\n\u0001x\u0018\u0001 \u0001(\u0002\u0012\t\n\u0001y\u0018\u0002 \u0001(\u0002\u0012\t\n\u0001z\u0018\u0003 \u0001(\u0002\u0012\u0012\n\nvisibility\u0018\u0004 \u0001(\u0002\u0012\u0010\n\bpresence\u0018\u0005 \u0001(\u0002\"5\n\fLandmarkList\u0012%\n\blandmark\u0018\u0001 \u0003(\u000b2\u0013.mediapipe.Landmark\"H\n\u0016LandmarkListCollection\u0012.\n\rlandmark_list\u0018\u0001 \u0003(\u000b2\u0017.mediapipe.LandmarkList\"[\n\u0012NormalizedLandmark\u0012\t\n\u0001x\u0018\u0001 \u0001(\u0002\u0012\t\n\u0001y\u0018\u0002 \u0001(\u0002\u0012\t\n\u0001z\u0018\u0003 \u0001(\u0002\u0012\u0012\n\nvisibility\u0018\u0004 \u0001(\u0002\u0012\u0010\n\bpresence\u0018\u0005 \u0001(\u0002\"I\n\u0016NormalizedLandmarkList\u0012\/\n\blandmark\u0018\u0001 \u0003(\u000b2\u001d.mediapipe.NormalizedLandmark\"\\\n NormalizedLandmarkListCollection\u00128\n\rlandmark_list\u0018\u0001 \u0003(\u000b2!.mediapipe.NormalizedLandmarkListB3\n\"com.google.mediapipe.formats.protoB\rLandmarkProto",
+     "services_by_name":{
+
+     },
+     "syntax":"proto2"
+    },
+    "full_name":"mediapipe.Landmark",
+    "has_options":false,
+    "is_extendable":false,
+    "name":"Landmark",
+    "nested_types":{
+
+    },
+    "nested_types_by_name":{
+
+    },
+    "oneofs":{
+
+    },
+    "oneofs_by_name":{
+
+    },
+    "syntax":"proto2"
+   },
+   "presence":0.0,
+   "visibility":0.9999335408,
+   "x":-0.024321638,
+   "y":-0.6171811819,
+   "z":-0.3596215546
+  },
+  "6":{
+   "DESCRIPTOR":{
+    "containing_type":null,
+    "enum_types":{
+
+    },
+    "enum_types_by_name":{
+
+    },
+    "enum_values_by_name":{
+
+    },
+    "extension_ranges":[
+
+    ],
+    "extensions":{
+
+    },
+    "extensions_by_name":{
+
+    },
+    "fields":{
+
+    },
+    "fields_by_camelcase_name":{
+
+    },
+    "fields_by_name":{
+
+    },
+    "fields_by_number":{
+
+    },
+    "file":{
+     "dependencies":{
+
+     },
+     "enum_types_by_name":{
+
+     },
+     "extensions_by_name":{
+
+     },
+     "has_options":true,
+     "message_types_by_name":{
+
+     },
+     "name":"mediapipe\/framework\/formats\/landmark.proto",
+     "package":"mediapipe",
+     "pool":{
+
+     },
+     "public_dependencies":{
+
+     },
+     "serialized_pb":"\n*mediapipe\/framework\/formats\/landmark.proto\u0012\tmediapipe\"Q\n\bLandmark\u0012\t\n\u0001x\u0018\u0001 \u0001(\u0002\u0012\t\n\u0001y\u0018\u0002 \u0001(\u0002\u0012\t\n\u0001z\u0018\u0003 \u0001(\u0002\u0012\u0012\n\nvisibility\u0018\u0004 \u0001(\u0002\u0012\u0010\n\bpresence\u0018\u0005 \u0001(\u0002\"5\n\fLandmarkList\u0012%\n\blandmark\u0018\u0001 \u0003(\u000b2\u0013.mediapipe.Landmark\"H\n\u0016LandmarkListCollection\u0012.\n\rlandmark_list\u0018\u0001 \u0003(\u000b2\u0017.mediapipe.LandmarkList\"[\n\u0012NormalizedLandmark\u0012\t\n\u0001x\u0018\u0001 \u0001(\u0002\u0012\t\n\u0001y\u0018\u0002 \u0001(\u0002\u0012\t\n\u0001z\u0018\u0003 \u0001(\u0002\u0012\u0012\n\nvisibility\u0018\u0004 \u0001(\u0002\u0012\u0010\n\bpresence\u0018\u0005 \u0001(\u0002\"I\n\u0016NormalizedLandmarkList\u0012\/\n\blandmark\u0018\u0001 \u0003(\u000b2\u001d.mediapipe.NormalizedLandmark\"\\\n NormalizedLandmarkListCollection\u00128\n\rlandmark_list\u0018\u0001 \u0003(\u000b2!.mediapipe.NormalizedLandmarkListB3\n\"com.google.mediapipe.formats.protoB\rLandmarkProto",
+     "services_by_name":{
+
+     },
+     "syntax":"proto2"
+    },
+    "full_name":"mediapipe.Landmark",
+    "has_options":false,
+    "is_extendable":false,
+    "name":"Landmark",
+    "nested_types":{
+
+    },
+    "nested_types_by_name":{
+
+    },
+    "oneofs":{
+
+    },
+    "oneofs_by_name":{
+
+    },
+    "syntax":"proto2"
+   },
+   "presence":0.0,
+   "visibility":0.999931097,
+   "x":-0.0244593024,
+   "y":-0.6184464097,
+   "z":-0.3588816822
+  },
+  "7":{
+   "DESCRIPTOR":{
+    "containing_type":null,
+    "enum_types":{
+
+    },
+    "enum_types_by_name":{
+
+    },
+    "enum_values_by_name":{
+
+    },
+    "extension_ranges":[
+
+    ],
+    "extensions":{
+
+    },
+    "extensions_by_name":{
+
+    },
+    "fields":{
+
+    },
+    "fields_by_camelcase_name":{
+
+    },
+    "fields_by_name":{
+
+    },
+    "fields_by_number":{
+
+    },
+    "file":{
+     "dependencies":{
+
+     },
+     "enum_types_by_name":{
+
+     },
+     "extensions_by_name":{
+
+     },
+     "has_options":true,
+     "message_types_by_name":{
+
+     },
+     "name":"mediapipe\/framework\/formats\/landmark.proto",
+     "package":"mediapipe",
+     "pool":{
+
+     },
+     "public_dependencies":{
+
+     },
+     "serialized_pb":"\n*mediapipe\/framework\/formats\/landmark.proto\u0012\tmediapipe\"Q\n\bLandmark\u0012\t\n\u0001x\u0018\u0001 \u0001(\u0002\u0012\t\n\u0001y\u0018\u0002 \u0001(\u0002\u0012\t\n\u0001z\u0018\u0003 \u0001(\u0002\u0012\u0012\n\nvisibility\u0018\u0004 \u0001(\u0002\u0012\u0010\n\bpresence\u0018\u0005 \u0001(\u0002\"5\n\fLandmarkList\u0012%\n\blandmark\u0018\u0001 \u0003(\u000b2\u0013.mediapipe.Landmark\"H\n\u0016LandmarkListCollection\u0012.\n\rlandmark_list\u0018\u0001 \u0003(\u000b2\u0017.mediapipe.LandmarkList\"[\n\u0012NormalizedLandmark\u0012\t\n\u0001x\u0018\u0001 \u0001(\u0002\u0012\t\n\u0001y\u0018\u0002 \u0001(\u0002\u0012\t\n\u0001z\u0018\u0003 \u0001(\u0002\u0012\u0012\n\nvisibility\u0018\u0004 \u0001(\u0002\u0012\u0010\n\bpresence\u0018\u0005 \u0001(\u0002\"I\n\u0016NormalizedLandmarkList\u0012\/\n\blandmark\u0018\u0001 \u0003(\u000b2\u001d.mediapipe.NormalizedLandmark\"\\\n NormalizedLandmarkListCollection\u00128\n\rlandmark_list\u0018\u0001 \u0003(\u000b2!.mediapipe.NormalizedLandmarkListB3\n\"com.google.mediapipe.formats.protoB\rLandmarkProto",
+     "services_by_name":{
+
+     },
+     "syntax":"proto2"
+    },
+    "full_name":"mediapipe.Landmark",
+    "has_options":false,
+    "is_extendable":false,
+    "name":"Landmark",
+    "nested_types":{
+
+    },
+    "nested_types_by_name":{
+
+    },
+    "oneofs":{
+
+    },
+    "oneofs_by_name":{
+
+    },
+    "syntax":"proto2"
+   },
+   "presence":0.0,
+   "visibility":0.9998739362,
+   "x":0.0604172684,
+   "y":-0.6170520782,
+   "z":-0.2587034404
+  },
+  "8":{
+   "DESCRIPTOR":{
+    "containing_type":null,
+    "enum_types":{
+
+    },
+    "enum_types_by_name":{
+
+    },
+    "enum_values_by_name":{
+
+    },
+    "extension_ranges":[
+
+    ],
+    "extensions":{
+
+    },
+    "extensions_by_name":{
+
+    },
+    "fields":{
+
+    },
+    "fields_by_camelcase_name":{
+
+    },
+    "fields_by_name":{
+
+    },
+    "fields_by_number":{
+
+    },
+    "file":{
+     "dependencies":{
+
+     },
+     "enum_types_by_name":{
+
+     },
+     "extensions_by_name":{
+
+     },
+     "has_options":true,
+     "message_types_by_name":{
+
+     },
+     "name":"mediapipe\/framework\/formats\/landmark.proto",
+     "package":"mediapipe",
+     "pool":{
+
+     },
+     "public_dependencies":{
+
+     },
+     "serialized_pb":"\n*mediapipe\/framework\/formats\/landmark.proto\u0012\tmediapipe\"Q\n\bLandmark\u0012\t\n\u0001x\u0018\u0001 \u0001(\u0002\u0012\t\n\u0001y\u0018\u0002 \u0001(\u0002\u0012\t\n\u0001z\u0018\u0003 \u0001(\u0002\u0012\u0012\n\nvisibility\u0018\u0004 \u0001(\u0002\u0012\u0010\n\bpresence\u0018\u0005 \u0001(\u0002\"5\n\fLandmarkList\u0012%\n\blandmark\u0018\u0001 \u0003(\u000b2\u0013.mediapipe.Landmark\"H\n\u0016LandmarkListCollection\u0012.\n\rlandmark_list\u0018\u0001 \u0003(\u000b2\u0017.mediapipe.LandmarkList\"[\n\u0012NormalizedLandmark\u0012\t\n\u0001x\u0018\u0001 \u0001(\u0002\u0012\t\n\u0001y\u0018\u0002 \u0001(\u0002\u0012\t\n\u0001z\u0018\u0003 \u0001(\u0002\u0012\u0012\n\nvisibility\u0018\u0004 \u0001(\u0002\u0012\u0010\n\bpresence\u0018\u0005 \u0001(\u0002\"I\n\u0016NormalizedLandmarkList\u0012\/\n\blandmark\u0018\u0001 \u0003(\u000b2\u001d.mediapipe.NormalizedLandmark\"\\\n NormalizedLandmarkListCollection\u00128\n\rlandmark_list\u0018\u0001 \u0003(\u000b2!.mediapipe.NormalizedLandmarkListB3\n\"com.google.mediapipe.formats.protoB\rLandmarkProto",
+     "services_by_name":{
+
+     },
+     "syntax":"proto2"
+    },
+    "full_name":"mediapipe.Landmark",
+    "has_options":false,
+    "is_extendable":false,
+    "name":"Landmark",
+    "nested_types":{
+
+    },
+    "nested_types_by_name":{
+
+    },
+    "oneofs":{
+
+    },
+    "oneofs_by_name":{
+
+    },
+    "syntax":"proto2"
+   },
+   "presence":0.0,
+   "visibility":0.9997954369,
+   "x":-0.076817371,
+   "y":-0.5952889919,
+   "z":-0.2558433712
+  },
+  "9":{
+   "DESCRIPTOR":{
+    "containing_type":null,
+    "enum_types":{
+
+    },
+    "enum_types_by_name":{
+
+    },
+    "enum_values_by_name":{
+
+    },
+    "extension_ranges":[
+
+    ],
+    "extensions":{
+
+    },
+    "extensions_by_name":{
+
+    },
+    "fields":{
+
+    },
+    "fields_by_camelcase_name":{
+
+    },
+    "fields_by_name":{
+
+    },
+    "fields_by_number":{
+
+    },
+    "file":{
+     "dependencies":{
+
+     },
+     "enum_types_by_name":{
+
+     },
+     "extensions_by_name":{
+
+     },
+     "has_options":true,
+     "message_types_by_name":{
+
+     },
+     "name":"mediapipe\/framework\/formats\/landmark.proto",
+     "package":"mediapipe",
+     "pool":{
+
+     },
+     "public_dependencies":{
+
+     },
+     "serialized_pb":"\n*mediapipe\/framework\/formats\/landmark.proto\u0012\tmediapipe\"Q\n\bLandmark\u0012\t\n\u0001x\u0018\u0001 \u0001(\u0002\u0012\t\n\u0001y\u0018\u0002 \u0001(\u0002\u0012\t\n\u0001z\u0018\u0003 \u0001(\u0002\u0012\u0012\n\nvisibility\u0018\u0004 \u0001(\u0002\u0012\u0010\n\bpresence\u0018\u0005 \u0001(\u0002\"5\n\fLandmarkList\u0012%\n\blandmark\u0018\u0001 \u0003(\u000b2\u0013.mediapipe.Landmark\"H\n\u0016LandmarkListCollection\u0012.\n\rlandmark_list\u0018\u0001 \u0003(\u000b2\u0017.mediapipe.LandmarkList\"[\n\u0012NormalizedLandmark\u0012\t\n\u0001x\u0018\u0001 \u0001(\u0002\u0012\t\n\u0001y\u0018\u0002 \u0001(\u0002\u0012\t\n\u0001z\u0018\u0003 \u0001(\u0002\u0012\u0012\n\nvisibility\u0018\u0004 \u0001(\u0002\u0012\u0010\n\bpresence\u0018\u0005 \u0001(\u0002\"I\n\u0016NormalizedLandmarkList\u0012\/\n\blandmark\u0018\u0001 \u0003(\u000b2\u001d.mediapipe.NormalizedLandmark\"\\\n NormalizedLandmarkListCollection\u00128\n\rlandmark_list\u0018\u0001 \u0003(\u000b2!.mediapipe.NormalizedLandmarkListB3\n\"com.google.mediapipe.formats.protoB\rLandmarkProto",
+     "services_by_name":{
+
+     },
+     "syntax":"proto2"
+    },
+    "full_name":"mediapipe.Landmark",
+    "has_options":false,
+    "is_extendable":false,
+    "name":"Landmark",
+    "nested_types":{
+
+    },
+    "nested_types_by_name":{
+
+    },
+    "oneofs":{
+
+    },
+    "oneofs_by_name":{
+
+    },
+    "syntax":"proto2"
+   },
+   "presence":0.0,
+   "visibility":0.9999760985,
+   "x":0.0326600932,
+   "y":-0.5635089278,
+   "z":-0.3392646909
+  },
+  "10":{
+   "DESCRIPTOR":{
+    "containing_type":null,
+    "enum_types":{
+
+    },
+    "enum_types_by_name":{
+
+    },
+    "enum_values_by_name":{
+
+    },
+    "extension_ranges":[
+
+    ],
+    "extensions":{
+
+    },
+    "extensions_by_name":{
+
+    },
+    "fields":{
+
+    },
+    "fields_by_camelcase_name":{
+
+    },
+    "fields_by_name":{
+
+    },
+    "fields_by_number":{
+
+    },
+    "file":{
+     "dependencies":{
+
+     },
+     "enum_types_by_name":{
+
+     },
+     "extensions_by_name":{
+
+     },
+     "has_options":true,
+     "message_types_by_name":{
+
+     },
+     "name":"mediapipe\/framework\/formats\/landmark.proto",
+     "package":"mediapipe",
+     "pool":{
+
+     },
+     "public_dependencies":{
+
+     },
+     "serialized_pb":"\n*mediapipe\/framework\/formats\/landmark.proto\u0012\tmediapipe\"Q\n\bLandmark\u0012\t\n\u0001x\u0018\u0001 \u0001(\u0002\u0012\t\n\u0001y\u0018\u0002 \u0001(\u0002\u0012\t\n\u0001z\u0018\u0003 \u0001(\u0002\u0012\u0012\n\nvisibility\u0018\u0004 \u0001(\u0002\u0012\u0010\n\bpresence\u0018\u0005 \u0001(\u0002\"5\n\fLandmarkList\u0012%\n\blandmark\u0018\u0001 \u0003(\u000b2\u0013.mediapipe.Landmark\"H\n\u0016LandmarkListCollection\u0012.\n\rlandmark_list\u0018\u0001 \u0003(\u000b2\u0017.mediapipe.LandmarkList\"[\n\u0012NormalizedLandmark\u0012\t\n\u0001x\u0018\u0001 \u0001(\u0002\u0012\t\n\u0001y\u0018\u0002 \u0001(\u0002\u0012\t\n\u0001z\u0018\u0003 \u0001(\u0002\u0012\u0012\n\nvisibility\u0018\u0004 \u0001(\u0002\u0012\u0010\n\bpresence\u0018\u0005 \u0001(\u0002\"I\n\u0016NormalizedLandmarkList\u0012\/\n\blandmark\u0018\u0001 \u0003(\u000b2\u001d.mediapipe.NormalizedLandmark\"\\\n NormalizedLandmarkListCollection\u00128\n\rlandmark_list\u0018\u0001 \u0003(\u000b2!.mediapipe.NormalizedLandmarkListB3\n\"com.google.mediapipe.formats.protoB\rLandmarkProto",
+     "services_by_name":{
+
+     },
+     "syntax":"proto2"
+    },
+    "full_name":"mediapipe.Landmark",
+    "has_options":false,
+    "is_extendable":false,
+    "name":"Landmark",
+    "nested_types":{
+
+    },
+    "nested_types_by_name":{
+
+    },
+    "oneofs":{
+
+    },
+    "oneofs_by_name":{
+
+    },
+    "syntax":"proto2"
+   },
+   "presence":0.0,
+   "visibility":0.9999657273,
+   "x":-0.0073879315,
+   "y":-0.5560060143,
+   "z":-0.3372944891
+  },
+  "11":{
+   "DESCRIPTOR":{
+    "containing_type":null,
+    "enum_types":{
+
+    },
+    "enum_types_by_name":{
+
+    },
+    "enum_values_by_name":{
+
+    },
+    "extension_ranges":[
+
+    ],
+    "extensions":{
+
+    },
+    "extensions_by_name":{
+
+    },
+    "fields":{
+
+    },
+    "fields_by_camelcase_name":{
+
+    },
+    "fields_by_name":{
+
+    },
+    "fields_by_number":{
+
+    },
+    "file":{
+     "dependencies":{
+
+     },
+     "enum_types_by_name":{
+
+     },
+     "extensions_by_name":{
+
+     },
+     "has_options":true,
+     "message_types_by_name":{
+
+     },
+     "name":"mediapipe\/framework\/formats\/landmark.proto",
+     "package":"mediapipe",
+     "pool":{
+
+     },
+     "public_dependencies":{
+
+     },
+     "serialized_pb":"\n*mediapipe\/framework\/formats\/landmark.proto\u0012\tmediapipe\"Q\n\bLandmark\u0012\t\n\u0001x\u0018\u0001 \u0001(\u0002\u0012\t\n\u0001y\u0018\u0002 \u0001(\u0002\u0012\t\n\u0001z\u0018\u0003 \u0001(\u0002\u0012\u0012\n\nvisibility\u0018\u0004 \u0001(\u0002\u0012\u0010\n\bpresence\u0018\u0005 \u0001(\u0002\"5\n\fLandmarkList\u0012%\n\blandmark\u0018\u0001 \u0003(\u000b2\u0013.mediapipe.Landmark\"H\n\u0016LandmarkListCollection\u0012.\n\rlandmark_list\u0018\u0001 \u0003(\u000b2\u0017.mediapipe.LandmarkList\"[\n\u0012NormalizedLandmark\u0012\t\n\u0001x\u0018\u0001 \u0001(\u0002\u0012\t\n\u0001y\u0018\u0002 \u0001(\u0002\u0012\t\n\u0001z\u0018\u0003 \u0001(\u0002\u0012\u0012\n\nvisibility\u0018\u0004 \u0001(\u0002\u0012\u0010\n\bpresence\u0018\u0005 \u0001(\u0002\"I\n\u0016NormalizedLandmarkList\u0012\/\n\blandmark\u0018\u0001 \u0003(\u000b2\u001d.mediapipe.NormalizedLandmark\"\\\n NormalizedLandmarkListCollection\u00128\n\rlandmark_list\u0018\u0001 \u0003(\u000b2!.mediapipe.NormalizedLandmarkListB3\n\"com.google.mediapipe.formats.protoB\rLandmarkProto",
+     "services_by_name":{
+
+     },
+     "syntax":"proto2"
+    },
+    "full_name":"mediapipe.Landmark",
+    "has_options":false,
+    "is_extendable":false,
+    "name":"Landmark",
+    "nested_types":{
+
+    },
+    "nested_types_by_name":{
+
+    },
+    "oneofs":{
+
+    },
+    "oneofs_by_name":{
+
+    },
+    "syntax":"proto2"
+   },
+   "presence":0.0,
+   "visibility":0.9999561906,
+   "x":0.1728872508,
+   "y":-0.4278954864,
+   "z":-0.1763592809
+  },
+  "12":{
+   "DESCRIPTOR":{
+    "containing_type":null,
+    "enum_types":{
+
+    },
+    "enum_types_by_name":{
+
+    },
+    "enum_values_by_name":{
+
+    },
+    "extension_ranges":[
+
+    ],
+    "extensions":{
+
+    },
+    "extensions_by_name":{
+
+    },
+    "fields":{
+
+    },
+    "fields_by_camelcase_name":{
+
+    },
+    "fields_by_name":{
+
+    },
+    "fields_by_number":{
+
+    },
+    "file":{
+     "dependencies":{
+
+     },
+     "enum_types_by_name":{
+
+     },
+     "extensions_by_name":{
+
+     },
+     "has_options":true,
+     "message_types_by_name":{
+
+     },
+     "name":"mediapipe\/framework\/formats\/landmark.proto",
+     "package":"mediapipe",
+     "pool":{
+
+     },
+     "public_dependencies":{
+
+     },
+     "serialized_pb":"\n*mediapipe\/framework\/formats\/landmark.proto\u0012\tmediapipe\"Q\n\bLandmark\u0012\t\n\u0001x\u0018\u0001 \u0001(\u0002\u0012\t\n\u0001y\u0018\u0002 \u0001(\u0002\u0012\t\n\u0001z\u0018\u0003 \u0001(\u0002\u0012\u0012\n\nvisibility\u0018\u0004 \u0001(\u0002\u0012\u0010\n\bpresence\u0018\u0005 \u0001(\u0002\"5\n\fLandmarkList\u0012%\n\blandmark\u0018\u0001 \u0003(\u000b2\u0013.mediapipe.Landmark\"H\n\u0016LandmarkListCollection\u0012.\n\rlandmark_list\u0018\u0001 \u0003(\u000b2\u0017.mediapipe.LandmarkList\"[\n\u0012NormalizedLandmark\u0012\t\n\u0001x\u0018\u0001 \u0001(\u0002\u0012\t\n\u0001y\u0018\u0002 \u0001(\u0002\u0012\t\n\u0001z\u0018\u0003 \u0001(\u0002\u0012\u0012\n\nvisibility\u0018\u0004 \u0001(\u0002\u0012\u0010\n\bpresence\u0018\u0005 \u0001(\u0002\"I\n\u0016NormalizedLandmarkList\u0012\/\n\blandmark\u0018\u0001 \u0003(\u000b2\u001d.mediapipe.NormalizedLandmark\"\\\n NormalizedLandmarkListCollection\u00128\n\rlandmark_list\u0018\u0001 \u0003(\u000b2!.mediapipe.NormalizedLandmarkListB3\n\"com.google.mediapipe.formats.protoB\rLandmarkProto",
+     "services_by_name":{
+
+     },
+     "syntax":"proto2"
+    },
+    "full_name":"mediapipe.Landmark",
+    "has_options":false,
+    "is_extendable":false,
+    "name":"Landmark",
+    "nested_types":{
+
+    },
+    "nested_types_by_name":{
+
+    },
+    "oneofs":{
+
+    },
+    "oneofs_by_name":{
+
+    },
+    "syntax":"proto2"
+   },
+   "presence":0.0,
+   "visibility":0.9999237657,
+   "x":-0.142712757,
+   "y":-0.4187861085,
+   "z":-0.1838378757
+  },
+  "13":{
+   "DESCRIPTOR":{
+    "containing_type":null,
+    "enum_types":{
+
+    },
+    "enum_types_by_name":{
+
+    },
+    "enum_values_by_name":{
+
+    },
+    "extension_ranges":[
+
+    ],
+    "extensions":{
+
+    },
+    "extensions_by_name":{
+
+    },
+    "fields":{
+
+    },
+    "fields_by_camelcase_name":{
+
+    },
+    "fields_by_name":{
+
+    },
+    "fields_by_number":{
+
+    },
+    "file":{
+     "dependencies":{
+
+     },
+     "enum_types_by_name":{
+
+     },
+     "extensions_by_name":{
+
+     },
+     "has_options":true,
+     "message_types_by_name":{
+
+     },
+     "name":"mediapipe\/framework\/formats\/landmark.proto",
+     "package":"mediapipe",
+     "pool":{
+
+     },
+     "public_dependencies":{
+
+     },
+     "serialized_pb":"\n*mediapipe\/framework\/formats\/landmark.proto\u0012\tmediapipe\"Q\n\bLandmark\u0012\t\n\u0001x\u0018\u0001 \u0001(\u0002\u0012\t\n\u0001y\u0018\u0002 \u0001(\u0002\u0012\t\n\u0001z\u0018\u0003 \u0001(\u0002\u0012\u0012\n\nvisibility\u0018\u0004 \u0001(\u0002\u0012\u0010\n\bpresence\u0018\u0005 \u0001(\u0002\"5\n\fLandmarkList\u0012%\n\blandmark\u0018\u0001 \u0003(\u000b2\u0013.mediapipe.Landmark\"H\n\u0016LandmarkListCollection\u0012.\n\rlandmark_list\u0018\u0001 \u0003(\u000b2\u0017.mediapipe.LandmarkList\"[\n\u0012NormalizedLandmark\u0012\t\n\u0001x\u0018\u0001 \u0001(\u0002\u0012\t\n\u0001y\u0018\u0002 \u0001(\u0002\u0012\t\n\u0001z\u0018\u0003 \u0001(\u0002\u0012\u0012\n\nvisibility\u0018\u0004 \u0001(\u0002\u0012\u0010\n\bpresence\u0018\u0005 \u0001(\u0002\"I\n\u0016NormalizedLandmarkList\u0012\/\n\blandmark\u0018\u0001 \u0003(\u000b2\u001d.mediapipe.NormalizedLandmark\"\\\n NormalizedLandmarkListCollection\u00128\n\rlandmark_list\u0018\u0001 \u0003(\u000b2!.mediapipe.NormalizedLandmarkListB3\n\"com.google.mediapipe.formats.protoB\rLandmarkProto",
+     "services_by_name":{
+
+     },
+     "syntax":"proto2"
+    },
+    "full_name":"mediapipe.Landmark",
+    "has_options":false,
+    "is_extendable":false,
+    "name":"Landmark",
+    "nested_types":{
+
+    },
+    "nested_types_by_name":{
+
+    },
+    "oneofs":{
+
+    },
+    "oneofs_by_name":{
+
+    },
+    "syntax":"proto2"
+   },
+   "presence":0.0,
+   "visibility":0.9947978854,
+   "x":0.1718767434,
+   "y":-0.1890873611,
+   "z":-0.1380455494
+  },
+  "14":{
+   "DESCRIPTOR":{
+    "containing_type":null,
+    "enum_types":{
+
+    },
+    "enum_types_by_name":{
+
+    },
+    "enum_values_by_name":{
+
+    },
+    "extension_ranges":[
+
+    ],
+    "extensions":{
+
+    },
+    "extensions_by_name":{
+
+    },
+    "fields":{
+
+    },
+    "fields_by_camelcase_name":{
+
+    },
+    "fields_by_name":{
+
+    },
+    "fields_by_number":{
+
+    },
+    "file":{
+     "dependencies":{
+
+     },
+     "enum_types_by_name":{
+
+     },
+     "extensions_by_name":{
+
+     },
+     "has_options":true,
+     "message_types_by_name":{
+
+     },
+     "name":"mediapipe\/framework\/formats\/landmark.proto",
+     "package":"mediapipe",
+     "pool":{
+
+     },
+     "public_dependencies":{
+
+     },
+     "serialized_pb":"\n*mediapipe\/framework\/formats\/landmark.proto\u0012\tmediapipe\"Q\n\bLandmark\u0012\t\n\u0001x\u0018\u0001 \u0001(\u0002\u0012\t\n\u0001y\u0018\u0002 \u0001(\u0002\u0012\t\n\u0001z\u0018\u0003 \u0001(\u0002\u0012\u0012\n\nvisibility\u0018\u0004 \u0001(\u0002\u0012\u0010\n\bpresence\u0018\u0005 \u0001(\u0002\"5\n\fLandmarkList\u0012%\n\blandmark\u0018\u0001 \u0003(\u000b2\u0013.mediapipe.Landmark\"H\n\u0016LandmarkListCollection\u0012.\n\rlandmark_list\u0018\u0001 \u0003(\u000b2\u0017.mediapipe.LandmarkList\"[\n\u0012NormalizedLandmark\u0012\t\n\u0001x\u0018\u0001 \u0001(\u0002\u0012\t\n\u0001y\u0018\u0002 \u0001(\u0002\u0012\t\n\u0001z\u0018\u0003 \u0001(\u0002\u0012\u0012\n\nvisibility\u0018\u0004 \u0001(\u0002\u0012\u0010\n\bpresence\u0018\u0005 \u0001(\u0002\"I\n\u0016NormalizedLandmarkList\u0012\/\n\blandmark\u0018\u0001 \u0003(\u000b2\u001d.mediapipe.NormalizedLandmark\"\\\n NormalizedLandmarkListCollection\u00128\n\rlandmark_list\u0018\u0001 \u0003(\u000b2!.mediapipe.NormalizedLandmarkListB3\n\"com.google.mediapipe.formats.protoB\rLandmarkProto",
+     "services_by_name":{
+
+     },
+     "syntax":"proto2"
+    },
+    "full_name":"mediapipe.Landmark",
+    "has_options":false,
+    "is_extendable":false,
+    "name":"Landmark",
+    "nested_types":{
+
+    },
+    "nested_types_by_name":{
+
+    },
+    "oneofs":{
+
+    },
+    "oneofs_by_name":{
+
+    },
+    "syntax":"proto2"
+   },
+   "presence":0.0,
+   "visibility":0.9799048901,
+   "x":-0.1877277493,
+   "y":-0.1619709283,
+   "z":-0.1200896353
+  },
+  "15":{
+   "DESCRIPTOR":{
+    "containing_type":null,
+    "enum_types":{
+
+    },
+    "enum_types_by_name":{
+
+    },
+    "enum_values_by_name":{
+
+    },
+    "extension_ranges":[
+
+    ],
+    "extensions":{
+
+    },
+    "extensions_by_name":{
+
+    },
+    "fields":{
+
+    },
+    "fields_by_camelcase_name":{
+
+    },
+    "fields_by_name":{
+
+    },
+    "fields_by_number":{
+
+    },
+    "file":{
+     "dependencies":{
+
+     },
+     "enum_types_by_name":{
+
+     },
+     "extensions_by_name":{
+
+     },
+     "has_options":true,
+     "message_types_by_name":{
+
+     },
+     "name":"mediapipe\/framework\/formats\/landmark.proto",
+     "package":"mediapipe",
+     "pool":{
+
+     },
+     "public_dependencies":{
+
+     },
+     "serialized_pb":"\n*mediapipe\/framework\/formats\/landmark.proto\u0012\tmediapipe\"Q\n\bLandmark\u0012\t\n\u0001x\u0018\u0001 \u0001(\u0002\u0012\t\n\u0001y\u0018\u0002 \u0001(\u0002\u0012\t\n\u0001z\u0018\u0003 \u0001(\u0002\u0012\u0012\n\nvisibility\u0018\u0004 \u0001(\u0002\u0012\u0010\n\bpresence\u0018\u0005 \u0001(\u0002\"5\n\fLandmarkList\u0012%\n\blandmark\u0018\u0001 \u0003(\u000b2\u0013.mediapipe.Landmark\"H\n\u0016LandmarkListCollection\u0012.\n\rlandmark_list\u0018\u0001 \u0003(\u000b2\u0017.mediapipe.LandmarkList\"[\n\u0012NormalizedLandmark\u0012\t\n\u0001x\u0018\u0001 \u0001(\u0002\u0012\t\n\u0001y\u0018\u0002 \u0001(\u0002\u0012\t\n\u0001z\u0018\u0003 \u0001(\u0002\u0012\u0012\n\nvisibility\u0018\u0004 \u0001(\u0002\u0012\u0010\n\bpresence\u0018\u0005 \u0001(\u0002\"I\n\u0016NormalizedLandmarkList\u0012\/\n\blandmark\u0018\u0001 \u0003(\u000b2\u001d.mediapipe.NormalizedLandmark\"\\\n NormalizedLandmarkListCollection\u00128\n\rlandmark_list\u0018\u0001 \u0003(\u000b2!.mediapipe.NormalizedLandmarkListB3\n\"com.google.mediapipe.formats.protoB\rLandmarkProto",
+     "services_by_name":{
+
+     },
+     "syntax":"proto2"
+    },
+    "full_name":"mediapipe.Landmark",
+    "has_options":false,
+    "is_extendable":false,
+    "name":"Landmark",
+    "nested_types":{
+
+    },
+    "nested_types_by_name":{
+
+    },
+    "oneofs":{
+
+    },
+    "oneofs_by_name":{
+
+    },
+    "syntax":"proto2"
+   },
+   "presence":0.0,
+   "visibility":0.9922929406,
+   "x":0.1598362625,
+   "y":0.0503643937,
+   "z":-0.2143317014
+  },
+  "16":{
+   "DESCRIPTOR":{
+    "containing_type":null,
+    "enum_types":{
+
+    },
+    "enum_types_by_name":{
+
+    },
+    "enum_values_by_name":{
+
+    },
+    "extension_ranges":[
+
+    ],
+    "extensions":{
+
+    },
+    "extensions_by_name":{
+
+    },
+    "fields":{
+
+    },
+    "fields_by_camelcase_name":{
+
+    },
+    "fields_by_name":{
+
+    },
+    "fields_by_number":{
+
+    },
+    "file":{
+     "dependencies":{
+
+     },
+     "enum_types_by_name":{
+
+     },
+     "extensions_by_name":{
+
+     },
+     "has_options":true,
+     "message_types_by_name":{
+
+     },
+     "name":"mediapipe\/framework\/formats\/landmark.proto",
+     "package":"mediapipe",
+     "pool":{
+
+     },
+     "public_dependencies":{
+
+     },
+     "serialized_pb":"\n*mediapipe\/framework\/formats\/landmark.proto\u0012\tmediapipe\"Q\n\bLandmark\u0012\t\n\u0001x\u0018\u0001 \u0001(\u0002\u0012\t\n\u0001y\u0018\u0002 \u0001(\u0002\u0012\t\n\u0001z\u0018\u0003 \u0001(\u0002\u0012\u0012\n\nvisibility\u0018\u0004 \u0001(\u0002\u0012\u0010\n\bpresence\u0018\u0005 \u0001(\u0002\"5\n\fLandmarkList\u0012%\n\blandmark\u0018\u0001 \u0003(\u000b2\u0013.mediapipe.Landmark\"H\n\u0016LandmarkListCollection\u0012.\n\rlandmark_list\u0018\u0001 \u0003(\u000b2\u0017.mediapipe.LandmarkList\"[\n\u0012NormalizedLandmark\u0012\t\n\u0001x\u0018\u0001 \u0001(\u0002\u0012\t\n\u0001y\u0018\u0002 \u0001(\u0002\u0012\t\n\u0001z\u0018\u0003 \u0001(\u0002\u0012\u0012\n\nvisibility\u0018\u0004 \u0001(\u0002\u0012\u0010\n\bpresence\u0018\u0005 \u0001(\u0002\"I\n\u0016NormalizedLandmarkList\u0012\/\n\blandmark\u0018\u0001 \u0003(\u000b2\u001d.mediapipe.NormalizedLandmark\"\\\n NormalizedLandmarkListCollection\u00128\n\rlandmark_list\u0018\u0001 \u0003(\u000b2!.mediapipe.NormalizedLandmarkListB3\n\"com.google.mediapipe.formats.protoB\rLandmarkProto",
+     "services_by_name":{
+
+     },
+     "syntax":"proto2"
+    },
+    "full_name":"mediapipe.Landmark",
+    "has_options":false,
+    "is_extendable":false,
+    "name":"Landmark",
+    "nested_types":{
+
+    },
+    "nested_types_by_name":{
+
+    },
+    "oneofs":{
+
+    },
+    "oneofs_by_name":{
+
+    },
+    "syntax":"proto2"
+   },
+   "presence":0.0,
+   "visibility":0.9607477784,
+   "x":-0.2256611735,
+   "y":0.0820920318,
+   "z":-0.1794457138
+  },
+  "17":{
+   "DESCRIPTOR":{
+    "containing_type":null,
+    "enum_types":{
+
+    },
+    "enum_types_by_name":{
+
+    },
+    "enum_values_by_name":{
+
+    },
+    "extension_ranges":[
+
+    ],
+    "extensions":{
+
+    },
+    "extensions_by_name":{
+
+    },
+    "fields":{
+
+    },
+    "fields_by_camelcase_name":{
+
+    },
+    "fields_by_name":{
+
+    },
+    "fields_by_number":{
+
+    },
+    "file":{
+     "dependencies":{
+
+     },
+     "enum_types_by_name":{
+
+     },
+     "extensions_by_name":{
+
+     },
+     "has_options":true,
+     "message_types_by_name":{
+
+     },
+     "name":"mediapipe\/framework\/formats\/landmark.proto",
+     "package":"mediapipe",
+     "pool":{
+
+     },
+     "public_dependencies":{
+
+     },
+     "serialized_pb":"\n*mediapipe\/framework\/formats\/landmark.proto\u0012\tmediapipe\"Q\n\bLandmark\u0012\t\n\u0001x\u0018\u0001 \u0001(\u0002\u0012\t\n\u0001y\u0018\u0002 \u0001(\u0002\u0012\t\n\u0001z\u0018\u0003 \u0001(\u0002\u0012\u0012\n\nvisibility\u0018\u0004 \u0001(\u0002\u0012\u0010\n\bpresence\u0018\u0005 \u0001(\u0002\"5\n\fLandmarkList\u0012%\n\blandmark\u0018\u0001 \u0003(\u000b2\u0013.mediapipe.Landmark\"H\n\u0016LandmarkListCollection\u0012.\n\rlandmark_list\u0018\u0001 \u0003(\u000b2\u0017.mediapipe.LandmarkList\"[\n\u0012NormalizedLandmark\u0012\t\n\u0001x\u0018\u0001 \u0001(\u0002\u0012\t\n\u0001y\u0018\u0002 \u0001(\u0002\u0012\t\n\u0001z\u0018\u0003 \u0001(\u0002\u0012\u0012\n\nvisibility\u0018\u0004 \u0001(\u0002\u0012\u0010\n\bpresence\u0018\u0005 \u0001(\u0002\"I\n\u0016NormalizedLandmarkList\u0012\/\n\blandmark\u0018\u0001 \u0003(\u000b2\u001d.mediapipe.NormalizedLandmark\"\\\n NormalizedLandmarkListCollection\u00128\n\rlandmark_list\u0018\u0001 \u0003(\u000b2!.mediapipe.NormalizedLandmarkListB3\n\"com.google.mediapipe.formats.protoB\rLandmarkProto",
+     "services_by_name":{
+
+     },
+     "syntax":"proto2"
+    },
+    "full_name":"mediapipe.Landmark",
+    "has_options":false,
+    "is_extendable":false,
+    "name":"Landmark",
+    "nested_types":{
+
+    },
+    "nested_types_by_name":{
+
+    },
+    "oneofs":{
+
+    },
+    "oneofs_by_name":{
+
+    },
+    "syntax":"proto2"
+   },
+   "presence":0.0,
+   "visibility":0.9794889092,
+   "x":0.1551427096,
+   "y":0.1382405311,
+   "z":-0.2386713326
+  },
+  "18":{
+   "DESCRIPTOR":{
+    "containing_type":null,
+    "enum_types":{
+
+    },
+    "enum_types_by_name":{
+
+    },
+    "enum_values_by_name":{
+
+    },
+    "extension_ranges":[
+
+    ],
+    "extensions":{
+
+    },
+    "extensions_by_name":{
+
+    },
+    "fields":{
+
+    },
+    "fields_by_camelcase_name":{
+
+    },
+    "fields_by_name":{
+
+    },
+    "fields_by_number":{
+
+    },
+    "file":{
+     "dependencies":{
+
+     },
+     "enum_types_by_name":{
+
+     },
+     "extensions_by_name":{
+
+     },
+     "has_options":true,
+     "message_types_by_name":{
+
+     },
+     "name":"mediapipe\/framework\/formats\/landmark.proto",
+     "package":"mediapipe",
+     "pool":{
+
+     },
+     "public_dependencies":{
+
+     },
+     "serialized_pb":"\n*mediapipe\/framework\/formats\/landmark.proto\u0012\tmediapipe\"Q\n\bLandmark\u0012\t\n\u0001x\u0018\u0001 \u0001(\u0002\u0012\t\n\u0001y\u0018\u0002 \u0001(\u0002\u0012\t\n\u0001z\u0018\u0003 \u0001(\u0002\u0012\u0012\n\nvisibility\u0018\u0004 \u0001(\u0002\u0012\u0010\n\bpresence\u0018\u0005 \u0001(\u0002\"5\n\fLandmarkList\u0012%\n\blandmark\u0018\u0001 \u0003(\u000b2\u0013.mediapipe.Landmark\"H\n\u0016LandmarkListCollection\u0012.\n\rlandmark_list\u0018\u0001 \u0003(\u000b2\u0017.mediapipe.LandmarkList\"[\n\u0012NormalizedLandmark\u0012\t\n\u0001x\u0018\u0001 \u0001(\u0002\u0012\t\n\u0001y\u0018\u0002 \u0001(\u0002\u0012\t\n\u0001z\u0018\u0003 \u0001(\u0002\u0012\u0012\n\nvisibility\u0018\u0004 \u0001(\u0002\u0012\u0010\n\bpresence\u0018\u0005 \u0001(\u0002\"I\n\u0016NormalizedLandmarkList\u0012\/\n\blandmark\u0018\u0001 \u0003(\u000b2\u001d.mediapipe.NormalizedLandmark\"\\\n NormalizedLandmarkListCollection\u00128\n\rlandmark_list\u0018\u0001 \u0003(\u000b2!.mediapipe.NormalizedLandmarkListB3\n\"com.google.mediapipe.formats.protoB\rLandmarkProto",
+     "services_by_name":{
+
+     },
+     "syntax":"proto2"
+    },
+    "full_name":"mediapipe.Landmark",
+    "has_options":false,
+    "is_extendable":false,
+    "name":"Landmark",
+    "nested_types":{
+
+    },
+    "nested_types_by_name":{
+
+    },
+    "oneofs":{
+
+    },
+    "oneofs_by_name":{
+
+    },
+    "syntax":"proto2"
+   },
+   "presence":0.0,
+   "visibility":0.9244046807,
+   "x":-0.2314432263,
+   "y":0.1712371707,
+   "z":-0.195452109
+  },
+  "19":{
+   "DESCRIPTOR":{
+    "containing_type":null,
+    "enum_types":{
+
+    },
+    "enum_types_by_name":{
+
+    },
+    "enum_values_by_name":{
+
+    },
+    "extension_ranges":[
+
+    ],
+    "extensions":{
+
+    },
+    "extensions_by_name":{
+
+    },
+    "fields":{
+
+    },
+    "fields_by_camelcase_name":{
+
+    },
+    "fields_by_name":{
+
+    },
+    "fields_by_number":{
+
+    },
+    "file":{
+     "dependencies":{
+
+     },
+     "enum_types_by_name":{
+
+     },
+     "extensions_by_name":{
+
+     },
+     "has_options":true,
+     "message_types_by_name":{
+
+     },
+     "name":"mediapipe\/framework\/formats\/landmark.proto",
+     "package":"mediapipe",
+     "pool":{
+
+     },
+     "public_dependencies":{
+
+     },
+     "serialized_pb":"\n*mediapipe\/framework\/formats\/landmark.proto\u0012\tmediapipe\"Q\n\bLandmark\u0012\t\n\u0001x\u0018\u0001 \u0001(\u0002\u0012\t\n\u0001y\u0018\u0002 \u0001(\u0002\u0012\t\n\u0001z\u0018\u0003 \u0001(\u0002\u0012\u0012\n\nvisibility\u0018\u0004 \u0001(\u0002\u0012\u0010\n\bpresence\u0018\u0005 \u0001(\u0002\"5\n\fLandmarkList\u0012%\n\blandmark\u0018\u0001 \u0003(\u000b2\u0013.mediapipe.Landmark\"H\n\u0016LandmarkListCollection\u0012.\n\rlandmark_list\u0018\u0001 \u0003(\u000b2\u0017.mediapipe.LandmarkList\"[\n\u0012NormalizedLandmark\u0012\t\n\u0001x\u0018\u0001 \u0001(\u0002\u0012\t\n\u0001y\u0018\u0002 \u0001(\u0002\u0012\t\n\u0001z\u0018\u0003 \u0001(\u0002\u0012\u0012\n\nvisibility\u0018\u0004 \u0001(\u0002\u0012\u0010\n\bpresence\u0018\u0005 \u0001(\u0002\"I\n\u0016NormalizedLandmarkList\u0012\/\n\blandmark\u0018\u0001 \u0003(\u000b2\u001d.mediapipe.NormalizedLandmark\"\\\n NormalizedLandmarkListCollection\u00128\n\rlandmark_list\u0018\u0001 \u0003(\u000b2!.mediapipe.NormalizedLandmarkListB3\n\"com.google.mediapipe.formats.protoB\rLandmarkProto",
+     "services_by_name":{
+
+     },
+     "syntax":"proto2"
+    },
+    "full_name":"mediapipe.Landmark",
+    "has_options":false,
+    "is_extendable":false,
+    "name":"Landmark",
+    "nested_types":{
+
+    },
+    "nested_types_by_name":{
+
+    },
+    "oneofs":{
+
+    },
+    "oneofs_by_name":{
+
+    },
+    "syntax":"proto2"
+   },
+   "presence":0.0,
+   "visibility":0.9811460376,
+   "x":0.1259513348,
+   "y":0.1454876065,
+   "z":-0.2731864452
+  },
+  "20":{
+   "DESCRIPTOR":{
+    "containing_type":null,
+    "enum_types":{
+
+    },
+    "enum_types_by_name":{
+
+    },
+    "enum_values_by_name":{
+
+    },
+    "extension_ranges":[
+
+    ],
+    "extensions":{
+
+    },
+    "extensions_by_name":{
+
+    },
+    "fields":{
+
+    },
+    "fields_by_camelcase_name":{
+
+    },
+    "fields_by_name":{
+
+    },
+    "fields_by_number":{
+
+    },
+    "file":{
+     "dependencies":{
+
+     },
+     "enum_types_by_name":{
+
+     },
+     "extensions_by_name":{
+
+     },
+     "has_options":true,
+     "message_types_by_name":{
+
+     },
+     "name":"mediapipe\/framework\/formats\/landmark.proto",
+     "package":"mediapipe",
+     "pool":{
+
+     },
+     "public_dependencies":{
+
+     },
+     "serialized_pb":"\n*mediapipe\/framework\/formats\/landmark.proto\u0012\tmediapipe\"Q\n\bLandmark\u0012\t\n\u0001x\u0018\u0001 \u0001(\u0002\u0012\t\n\u0001y\u0018\u0002 \u0001(\u0002\u0012\t\n\u0001z\u0018\u0003 \u0001(\u0002\u0012\u0012\n\nvisibility\u0018\u0004 \u0001(\u0002\u0012\u0010\n\bpresence\u0018\u0005 \u0001(\u0002\"5\n\fLandmarkList\u0012%\n\blandmark\u0018\u0001 \u0003(\u000b2\u0013.mediapipe.Landmark\"H\n\u0016LandmarkListCollection\u0012.\n\rlandmark_list\u0018\u0001 \u0003(\u000b2\u0017.mediapipe.LandmarkList\"[\n\u0012NormalizedLandmark\u0012\t\n\u0001x\u0018\u0001 \u0001(\u0002\u0012\t\n\u0001y\u0018\u0002 \u0001(\u0002\u0012\t\n\u0001z\u0018\u0003 \u0001(\u0002\u0012\u0012\n\nvisibility\u0018\u0004 \u0001(\u0002\u0012\u0010\n\bpresence\u0018\u0005 \u0001(\u0002\"I\n\u0016NormalizedLandmarkList\u0012\/\n\blandmark\u0018\u0001 \u0003(\u000b2\u001d.mediapipe.NormalizedLandmark\"\\\n NormalizedLandmarkListCollection\u00128\n\rlandmark_list\u0018\u0001 \u0003(\u000b2!.mediapipe.NormalizedLandmarkListB3\n\"com.google.mediapipe.formats.protoB\rLandmarkProto",
+     "services_by_name":{
+
+     },
+     "syntax":"proto2"
+    },
+    "full_name":"mediapipe.Landmark",
+    "has_options":false,
+    "is_extendable":false,
+    "name":"Landmark",
+    "nested_types":{
+
+    },
+    "nested_types_by_name":{
+
+    },
+    "oneofs":{
+
+    },
+    "oneofs_by_name":{
+
+    },
+    "syntax":"proto2"
+   },
+   "presence":0.0,
+   "visibility":0.9289865494,
+   "x":-0.2177522629,
+   "y":0.1698930413,
+   "z":-0.2254279256
+  },
+  "21":{
+   "DESCRIPTOR":{
+    "containing_type":null,
+    "enum_types":{
+
+    },
+    "enum_types_by_name":{
+
+    },
+    "enum_values_by_name":{
+
+    },
+    "extension_ranges":[
+
+    ],
+    "extensions":{
+
+    },
+    "extensions_by_name":{
+
+    },
+    "fields":{
+
+    },
+    "fields_by_camelcase_name":{
+
+    },
+    "fields_by_name":{
+
+    },
+    "fields_by_number":{
+
+    },
+    "file":{
+     "dependencies":{
+
+     },
+     "enum_types_by_name":{
+
+     },
+     "extensions_by_name":{
+
+     },
+     "has_options":true,
+     "message_types_by_name":{
+
+     },
+     "name":"mediapipe\/framework\/formats\/landmark.proto",
+     "package":"mediapipe",
+     "pool":{
+
+     },
+     "public_dependencies":{
+
+     },
+     "serialized_pb":"\n*mediapipe\/framework\/formats\/landmark.proto\u0012\tmediapipe\"Q\n\bLandmark\u0012\t\n\u0001x\u0018\u0001 \u0001(\u0002\u0012\t\n\u0001y\u0018\u0002 \u0001(\u0002\u0012\t\n\u0001z\u0018\u0003 \u0001(\u0002\u0012\u0012\n\nvisibility\u0018\u0004 \u0001(\u0002\u0012\u0010\n\bpresence\u0018\u0005 \u0001(\u0002\"5\n\fLandmarkList\u0012%\n\blandmark\u0018\u0001 \u0003(\u000b2\u0013.mediapipe.Landmark\"H\n\u0016LandmarkListCollection\u0012.\n\rlandmark_list\u0018\u0001 \u0003(\u000b2\u0017.mediapipe.LandmarkList\"[\n\u0012NormalizedLandmark\u0012\t\n\u0001x\u0018\u0001 \u0001(\u0002\u0012\t\n\u0001y\u0018\u0002 \u0001(\u0002\u0012\t\n\u0001z\u0018\u0003 \u0001(\u0002\u0012\u0012\n\nvisibility\u0018\u0004 \u0001(\u0002\u0012\u0010\n\bpresence\u0018\u0005 \u0001(\u0002\"I\n\u0016NormalizedLandmarkList\u0012\/\n\blandmark\u0018\u0001 \u0003(\u000b2\u001d.mediapipe.NormalizedLandmark\"\\\n NormalizedLandmarkListCollection\u00128\n\rlandmark_list\u0018\u0001 \u0003(\u000b2!.mediapipe.NormalizedLandmarkListB3\n\"com.google.mediapipe.formats.protoB\rLandmarkProto",
+     "services_by_name":{
+
+     },
+     "syntax":"proto2"
+    },
+    "full_name":"mediapipe.Landmark",
+    "has_options":false,
+    "is_extendable":false,
+    "name":"Landmark",
+    "nested_types":{
+
+    },
+    "nested_types_by_name":{
+
+    },
+    "oneofs":{
+
+    },
+    "oneofs_by_name":{
+
+    },
+    "syntax":"proto2"
+   },
+   "presence":0.0,
+   "visibility":0.9748020768,
+   "x":0.143656522,
+   "y":0.0706590563,
+   "z":-0.226394847
+  },
+  "22":{
+   "DESCRIPTOR":{
+    "containing_type":null,
+    "enum_types":{
+
+    },
+    "enum_types_by_name":{
+
+    },
+    "enum_values_by_name":{
+
+    },
+    "extension_ranges":[
+
+    ],
+    "extensions":{
+
+    },
+    "extensions_by_name":{
+
+    },
+    "fields":{
+
+    },
+    "fields_by_camelcase_name":{
+
+    },
+    "fields_by_name":{
+
+    },
+    "fields_by_number":{
+
+    },
+    "file":{
+     "dependencies":{
+
+     },
+     "enum_types_by_name":{
+
+     },
+     "extensions_by_name":{
+
+     },
+     "has_options":true,
+     "message_types_by_name":{
+
+     },
+     "name":"mediapipe\/framework\/formats\/landmark.proto",
+     "package":"mediapipe",
+     "pool":{
+
+     },
+     "public_dependencies":{
+
+     },
+     "serialized_pb":"\n*mediapipe\/framework\/formats\/landmark.proto\u0012\tmediapipe\"Q\n\bLandmark\u0012\t\n\u0001x\u0018\u0001 \u0001(\u0002\u0012\t\n\u0001y\u0018\u0002 \u0001(\u0002\u0012\t\n\u0001z\u0018\u0003 \u0001(\u0002\u0012\u0012\n\nvisibility\u0018\u0004 \u0001(\u0002\u0012\u0010\n\bpresence\u0018\u0005 \u0001(\u0002\"5\n\fLandmarkList\u0012%\n\blandmark\u0018\u0001 \u0003(\u000b2\u0013.mediapipe.Landmark\"H\n\u0016LandmarkListCollection\u0012.\n\rlandmark_list\u0018\u0001 \u0003(\u000b2\u0017.mediapipe.LandmarkList\"[\n\u0012NormalizedLandmark\u0012\t\n\u0001x\u0018\u0001 \u0001(\u0002\u0012\t\n\u0001y\u0018\u0002 \u0001(\u0002\u0012\t\n\u0001z\u0018\u0003 \u0001(\u0002\u0012\u0012\n\nvisibility\u0018\u0004 \u0001(\u0002\u0012\u0010\n\bpresence\u0018\u0005 \u0001(\u0002\"I\n\u0016NormalizedLandmarkList\u0012\/\n\blandmark\u0018\u0001 \u0003(\u000b2\u001d.mediapipe.NormalizedLandmark\"\\\n NormalizedLandmarkListCollection\u00128\n\rlandmark_list\u0018\u0001 \u0003(\u000b2!.mediapipe.NormalizedLandmarkListB3\n\"com.google.mediapipe.formats.protoB\rLandmarkProto",
+     "services_by_name":{
+
+     },
+     "syntax":"proto2"
+    },
+    "full_name":"mediapipe.Landmark",
+    "has_options":false,
+    "is_extendable":false,
+    "name":"Landmark",
+    "nested_types":{
+
+    },
+    "nested_types_by_name":{
+
+    },
+    "oneofs":{
+
+    },
+    "oneofs_by_name":{
+
+    },
+    "syntax":"proto2"
+   },
+   "presence":0.0,
+   "visibility":0.9180554748,
+   "x":-0.2123196274,
+   "y":0.1005915031,
+   "z":-0.1918002367
+  },
+  "23":{
+   "DESCRIPTOR":{
+    "containing_type":null,
+    "enum_types":{
+
+    },
+    "enum_types_by_name":{
+
+    },
+    "enum_values_by_name":{
+
+    },
+    "extension_ranges":[
+
+    ],
+    "extensions":{
+
+    },
+    "extensions_by_name":{
+
+    },
+    "fields":{
+
+    },
+    "fields_by_camelcase_name":{
+
+    },
+    "fields_by_name":{
+
+    },
+    "fields_by_number":{
+
+    },
+    "file":{
+     "dependencies":{
+
+     },
+     "enum_types_by_name":{
+
+     },
+     "extensions_by_name":{
+
+     },
+     "has_options":true,
+     "message_types_by_name":{
+
+     },
+     "name":"mediapipe\/framework\/formats\/landmark.proto",
+     "package":"mediapipe",
+     "pool":{
+
+     },
+     "public_dependencies":{
+
+     },
+     "serialized_pb":"\n*mediapipe\/framework\/formats\/landmark.proto\u0012\tmediapipe\"Q\n\bLandmark\u0012\t\n\u0001x\u0018\u0001 \u0001(\u0002\u0012\t\n\u0001y\u0018\u0002 \u0001(\u0002\u0012\t\n\u0001z\u0018\u0003 \u0001(\u0002\u0012\u0012\n\nvisibility\u0018\u0004 \u0001(\u0002\u0012\u0010\n\bpresence\u0018\u0005 \u0001(\u0002\"5\n\fLandmarkList\u0012%\n\blandmark\u0018\u0001 \u0003(\u000b2\u0013.mediapipe.Landmark\"H\n\u0016LandmarkListCollection\u0012.\n\rlandmark_list\u0018\u0001 \u0003(\u000b2\u0017.mediapipe.LandmarkList\"[\n\u0012NormalizedLandmark\u0012\t\n\u0001x\u0018\u0001 \u0001(\u0002\u0012\t\n\u0001y\u0018\u0002 \u0001(\u0002\u0012\t\n\u0001z\u0018\u0003 \u0001(\u0002\u0012\u0012\n\nvisibility\u0018\u0004 \u0001(\u0002\u0012\u0010\n\bpresence\u0018\u0005 \u0001(\u0002\"I\n\u0016NormalizedLandmarkList\u0012\/\n\blandmark\u0018\u0001 \u0003(\u000b2\u001d.mediapipe.NormalizedLandmark\"\\\n NormalizedLandmarkListCollection\u00128\n\rlandmark_list\u0018\u0001 \u0003(\u000b2!.mediapipe.NormalizedLandmarkListB3\n\"com.google.mediapipe.formats.protoB\rLandmarkProto",
+     "services_by_name":{
+
+     },
+     "syntax":"proto2"
+    },
+    "full_name":"mediapipe.Landmark",
+    "has_options":false,
+    "is_extendable":false,
+    "name":"Landmark",
+    "nested_types":{
+
+    },
+    "nested_types_by_name":{
+
+    },
+    "oneofs":{
+
+    },
+    "oneofs_by_name":{
+
+    },
+    "syntax":"proto2"
+   },
+   "presence":0.0,
+   "visibility":0.9992002249,
+   "x":0.1122753844,
+   "y":0.0078093396,
+   "z":0.0080068028
+  },
+  "24":{
+   "DESCRIPTOR":{
+    "containing_type":null,
+    "enum_types":{
+
+    },
+    "enum_types_by_name":{
+
+    },
+    "enum_values_by_name":{
+
+    },
+    "extension_ranges":[
+
+    ],
+    "extensions":{
+
+    },
+    "extensions_by_name":{
+
+    },
+    "fields":{
+
+    },
+    "fields_by_camelcase_name":{
+
+    },
+    "fields_by_name":{
+
+    },
+    "fields_by_number":{
+
+    },
+    "file":{
+     "dependencies":{
+
+     },
+     "enum_types_by_name":{
+
+     },
+     "extensions_by_name":{
+
+     },
+     "has_options":true,
+     "message_types_by_name":{
+
+     },
+     "name":"mediapipe\/framework\/formats\/landmark.proto",
+     "package":"mediapipe",
+     "pool":{
+
+     },
+     "public_dependencies":{
+
+     },
+     "serialized_pb":"\n*mediapipe\/framework\/formats\/landmark.proto\u0012\tmediapipe\"Q\n\bLandmark\u0012\t\n\u0001x\u0018\u0001 \u0001(\u0002\u0012\t\n\u0001y\u0018\u0002 \u0001(\u0002\u0012\t\n\u0001z\u0018\u0003 \u0001(\u0002\u0012\u0012\n\nvisibility\u0018\u0004 \u0001(\u0002\u0012\u0010\n\bpresence\u0018\u0005 \u0001(\u0002\"5\n\fLandmarkList\u0012%\n\blandmark\u0018\u0001 \u0003(\u000b2\u0013.mediapipe.Landmark\"H\n\u0016LandmarkListCollection\u0012.\n\rlandmark_list\u0018\u0001 \u0003(\u000b2\u0017.mediapipe.LandmarkList\"[\n\u0012NormalizedLandmark\u0012\t\n\u0001x\u0018\u0001 \u0001(\u0002\u0012\t\n\u0001y\u0018\u0002 \u0001(\u0002\u0012\t\n\u0001z\u0018\u0003 \u0001(\u0002\u0012\u0012\n\nvisibility\u0018\u0004 \u0001(\u0002\u0012\u0010\n\bpresence\u0018\u0005 \u0001(\u0002\"I\n\u0016NormalizedLandmarkList\u0012\/\n\blandmark\u0018\u0001 \u0003(\u000b2\u001d.mediapipe.NormalizedLandmark\"\\\n NormalizedLandmarkListCollection\u00128\n\rlandmark_list\u0018\u0001 \u0003(\u000b2!.mediapipe.NormalizedLandmarkListB3\n\"com.google.mediapipe.formats.protoB\rLandmarkProto",
+     "services_by_name":{
+
+     },
+     "syntax":"proto2"
+    },
+    "full_name":"mediapipe.Landmark",
+    "has_options":false,
+    "is_extendable":false,
+    "name":"Landmark",
+    "nested_types":{
+
+    },
+    "nested_types_by_name":{
+
+    },
+    "oneofs":{
+
+    },
+    "oneofs_by_name":{
+
+    },
+    "syntax":"proto2"
+   },
+   "presence":0.0,
+   "visibility":0.9996090531,
+   "x":-0.1126949936,
+   "y":-0.0085493103,
+   "z":-0.0064581749
+  },
+  "25":{
+   "DESCRIPTOR":{
+    "containing_type":null,
+    "enum_types":{
+
+    },
+    "enum_types_by_name":{
+
+    },
+    "enum_values_by_name":{
+
+    },
+    "extension_ranges":[
+
+    ],
+    "extensions":{
+
+    },
+    "extensions_by_name":{
+
+    },
+    "fields":{
+
+    },
+    "fields_by_camelcase_name":{
+
+    },
+    "fields_by_name":{
+
+    },
+    "fields_by_number":{
+
+    },
+    "file":{
+     "dependencies":{
+
+     },
+     "enum_types_by_name":{
+
+     },
+     "extensions_by_name":{
+
+     },
+     "has_options":true,
+     "message_types_by_name":{
+
+     },
+     "name":"mediapipe\/framework\/formats\/landmark.proto",
+     "package":"mediapipe",
+     "pool":{
+
+     },
+     "public_dependencies":{
+
+     },
+     "serialized_pb":"\n*mediapipe\/framework\/formats\/landmark.proto\u0012\tmediapipe\"Q\n\bLandmark\u0012\t\n\u0001x\u0018\u0001 \u0001(\u0002\u0012\t\n\u0001y\u0018\u0002 \u0001(\u0002\u0012\t\n\u0001z\u0018\u0003 \u0001(\u0002\u0012\u0012\n\nvisibility\u0018\u0004 \u0001(\u0002\u0012\u0010\n\bpresence\u0018\u0005 \u0001(\u0002\"5\n\fLandmarkList\u0012%\n\blandmark\u0018\u0001 \u0003(\u000b2\u0013.mediapipe.Landmark\"H\n\u0016LandmarkListCollection\u0012.\n\rlandmark_list\u0018\u0001 \u0003(\u000b2\u0017.mediapipe.LandmarkList\"[\n\u0012NormalizedLandmark\u0012\t\n\u0001x\u0018\u0001 \u0001(\u0002\u0012\t\n\u0001y\u0018\u0002 \u0001(\u0002\u0012\t\n\u0001z\u0018\u0003 \u0001(\u0002\u0012\u0012\n\nvisibility\u0018\u0004 \u0001(\u0002\u0012\u0010\n\bpresence\u0018\u0005 \u0001(\u0002\"I\n\u0016NormalizedLandmarkList\u0012\/\n\blandmark\u0018\u0001 \u0003(\u000b2\u001d.mediapipe.NormalizedLandmark\"\\\n NormalizedLandmarkListCollection\u00128\n\rlandmark_list\u0018\u0001 \u0003(\u000b2!.mediapipe.NormalizedLandmarkListB3\n\"com.google.mediapipe.formats.protoB\rLandmarkProto",
+     "services_by_name":{
+
+     },
+     "syntax":"proto2"
+    },
+    "full_name":"mediapipe.Landmark",
+    "has_options":false,
+    "is_extendable":false,
+    "name":"Landmark",
+    "nested_types":{
+
+    },
+    "nested_types_by_name":{
+
+    },
+    "oneofs":{
+
+    },
+    "oneofs_by_name":{
+
+    },
+    "syntax":"proto2"
+   },
+   "presence":0.0,
+   "visibility":0.9664215446,
+   "x":0.0398745798,
+   "y":0.4197367728,
+   "z":0.0379581377
+  },
+  "26":{
+   "DESCRIPTOR":{
+    "containing_type":null,
+    "enum_types":{
+
+    },
+    "enum_types_by_name":{
+
+    },
+    "enum_values_by_name":{
+
+    },
+    "extension_ranges":[
+
+    ],
+    "extensions":{
+
+    },
+    "extensions_by_name":{
+
+    },
+    "fields":{
+
+    },
+    "fields_by_camelcase_name":{
+
+    },
+    "fields_by_name":{
+
+    },
+    "fields_by_number":{
+
+    },
+    "file":{
+     "dependencies":{
+
+     },
+     "enum_types_by_name":{
+
+     },
+     "extensions_by_name":{
+
+     },
+     "has_options":true,
+     "message_types_by_name":{
+
+     },
+     "name":"mediapipe\/framework\/formats\/landmark.proto",
+     "package":"mediapipe",
+     "pool":{
+
+     },
+     "public_dependencies":{
+
+     },
+     "serialized_pb":"\n*mediapipe\/framework\/formats\/landmark.proto\u0012\tmediapipe\"Q\n\bLandmark\u0012\t\n\u0001x\u0018\u0001 \u0001(\u0002\u0012\t\n\u0001y\u0018\u0002 \u0001(\u0002\u0012\t\n\u0001z\u0018\u0003 \u0001(\u0002\u0012\u0012\n\nvisibility\u0018\u0004 \u0001(\u0002\u0012\u0010\n\bpresence\u0018\u0005 \u0001(\u0002\"5\n\fLandmarkList\u0012%\n\blandmark\u0018\u0001 \u0003(\u000b2\u0013.mediapipe.Landmark\"H\n\u0016LandmarkListCollection\u0012.\n\rlandmark_list\u0018\u0001 \u0003(\u000b2\u0017.mediapipe.LandmarkList\"[\n\u0012NormalizedLandmark\u0012\t\n\u0001x\u0018\u0001 \u0001(\u0002\u0012\t\n\u0001y\u0018\u0002 \u0001(\u0002\u0012\t\n\u0001z\u0018\u0003 \u0001(\u0002\u0012\u0012\n\nvisibility\u0018\u0004 \u0001(\u0002\u0012\u0010\n\bpresence\u0018\u0005 \u0001(\u0002\"I\n\u0016NormalizedLandmarkList\u0012\/\n\blandmark\u0018\u0001 \u0003(\u000b2\u001d.mediapipe.NormalizedLandmark\"\\\n NormalizedLandmarkListCollection\u00128\n\rlandmark_list\u0018\u0001 \u0003(\u000b2!.mediapipe.NormalizedLandmarkListB3\n\"com.google.mediapipe.formats.protoB\rLandmarkProto",
+     "services_by_name":{
+
+     },
+     "syntax":"proto2"
+    },
+    "full_name":"mediapipe.Landmark",
+    "has_options":false,
+    "is_extendable":false,
+    "name":"Landmark",
+    "nested_types":{
+
+    },
+    "nested_types_by_name":{
+
+    },
+    "oneofs":{
+
+    },
+    "oneofs_by_name":{
+
+    },
+    "syntax":"proto2"
+   },
+   "presence":0.0,
+   "visibility":0.9813255668,
+   "x":-0.1449445933,
+   "y":0.3866394758,
+   "z":-0.0328672826
+  },
+  "27":{
+   "DESCRIPTOR":{
+    "containing_type":null,
+    "enum_types":{
+
+    },
+    "enum_types_by_name":{
+
+    },
+    "enum_values_by_name":{
+
+    },
+    "extension_ranges":[
+
+    ],
+    "extensions":{
+
+    },
+    "extensions_by_name":{
+
+    },
+    "fields":{
+
+    },
+    "fields_by_camelcase_name":{
+
+    },
+    "fields_by_name":{
+
+    },
+    "fields_by_number":{
+
+    },
+    "file":{
+     "dependencies":{
+
+     },
+     "enum_types_by_name":{
+
+     },
+     "extensions_by_name":{
+
+     },
+     "has_options":true,
+     "message_types_by_name":{
+
+     },
+     "name":"mediapipe\/framework\/formats\/landmark.proto",
+     "package":"mediapipe",
+     "pool":{
+
+     },
+     "public_dependencies":{
+
+     },
+     "serialized_pb":"\n*mediapipe\/framework\/formats\/landmark.proto\u0012\tmediapipe\"Q\n\bLandmark\u0012\t\n\u0001x\u0018\u0001 \u0001(\u0002\u0012\t\n\u0001y\u0018\u0002 \u0001(\u0002\u0012\t\n\u0001z\u0018\u0003 \u0001(\u0002\u0012\u0012\n\nvisibility\u0018\u0004 \u0001(\u0002\u0012\u0010\n\bpresence\u0018\u0005 \u0001(\u0002\"5\n\fLandmarkList\u0012%\n\blandmark\u0018\u0001 \u0003(\u000b2\u0013.mediapipe.Landmark\"H\n\u0016LandmarkListCollection\u0012.\n\rlandmark_list\u0018\u0001 \u0003(\u000b2\u0017.mediapipe.LandmarkList\"[\n\u0012NormalizedLandmark\u0012\t\n\u0001x\u0018\u0001 \u0001(\u0002\u0012\t\n\u0001y\u0018\u0002 \u0001(\u0002\u0012\t\n\u0001z\u0018\u0003 \u0001(\u0002\u0012\u0012\n\nvisibility\u0018\u0004 \u0001(\u0002\u0012\u0010\n\bpresence\u0018\u0005 \u0001(\u0002\"I\n\u0016NormalizedLandmarkList\u0012\/\n\blandmark\u0018\u0001 \u0003(\u000b2\u001d.mediapipe.NormalizedLandmark\"\\\n NormalizedLandmarkListCollection\u00128\n\rlandmark_list\u0018\u0001 \u0003(\u000b2!.mediapipe.NormalizedLandmarkListB3\n\"com.google.mediapipe.formats.protoB\rLandmarkProto",
+     "services_by_name":{
+
+     },
+     "syntax":"proto2"
+    },
+    "full_name":"mediapipe.Landmark",
+    "has_options":false,
+    "is_extendable":false,
+    "name":"Landmark",
+    "nested_types":{
+
+    },
+    "nested_types_by_name":{
+
+    },
+    "oneofs":{
+
+    },
+    "oneofs_by_name":{
+
+    },
+    "syntax":"proto2"
+   },
+   "presence":0.0,
+   "visibility":0.963753283,
+   "x":0.0633390173,
+   "y":0.7452897429,
+   "z":0.2070650607
+  },
+  "28":{
+   "DESCRIPTOR":{
+    "containing_type":null,
+    "enum_types":{
+
+    },
+    "enum_types_by_name":{
+
+    },
+    "enum_values_by_name":{
+
+    },
+    "extension_ranges":[
+
+    ],
+    "extensions":{
+
+    },
+    "extensions_by_name":{
+
+    },
+    "fields":{
+
+    },
+    "fields_by_camelcase_name":{
+
+    },
+    "fields_by_name":{
+
+    },
+    "fields_by_number":{
+
+    },
+    "file":{
+     "dependencies":{
+
+     },
+     "enum_types_by_name":{
+
+     },
+     "extensions_by_name":{
+
+     },
+     "has_options":true,
+     "message_types_by_name":{
+
+     },
+     "name":"mediapipe\/framework\/formats\/landmark.proto",
+     "package":"mediapipe",
+     "pool":{
+
+     },
+     "public_dependencies":{
+
+     },
+     "serialized_pb":"\n*mediapipe\/framework\/formats\/landmark.proto\u0012\tmediapipe\"Q\n\bLandmark\u0012\t\n\u0001x\u0018\u0001 \u0001(\u0002\u0012\t\n\u0001y\u0018\u0002 \u0001(\u0002\u0012\t\n\u0001z\u0018\u0003 \u0001(\u0002\u0012\u0012\n\nvisibility\u0018\u0004 \u0001(\u0002\u0012\u0010\n\bpresence\u0018\u0005 \u0001(\u0002\"5\n\fLandmarkList\u0012%\n\blandmark\u0018\u0001 \u0003(\u000b2\u0013.mediapipe.Landmark\"H\n\u0016LandmarkListCollection\u0012.\n\rlandmark_list\u0018\u0001 \u0003(\u000b2\u0017.mediapipe.LandmarkList\"[\n\u0012NormalizedLandmark\u0012\t\n\u0001x\u0018\u0001 \u0001(\u0002\u0012\t\n\u0001y\u0018\u0002 \u0001(\u0002\u0012\t\n\u0001z\u0018\u0003 \u0001(\u0002\u0012\u0012\n\nvisibility\u0018\u0004 \u0001(\u0002\u0012\u0010\n\bpresence\u0018\u0005 \u0001(\u0002\"I\n\u0016NormalizedLandmarkList\u0012\/\n\blandmark\u0018\u0001 \u0003(\u000b2\u001d.mediapipe.NormalizedLandmark\"\\\n NormalizedLandmarkListCollection\u00128\n\rlandmark_list\u0018\u0001 \u0003(\u000b2!.mediapipe.NormalizedLandmarkListB3\n\"com.google.mediapipe.formats.protoB\rLandmarkProto",
+     "services_by_name":{
+
+     },
+     "syntax":"proto2"
+    },
+    "full_name":"mediapipe.Landmark",
+    "has_options":false,
+    "is_extendable":false,
+    "name":"Landmark",
+    "nested_types":{
+
+    },
+    "nested_types_by_name":{
+
+    },
+    "oneofs":{
+
+    },
+    "oneofs_by_name":{
+
+    },
+    "syntax":"proto2"
+   },
+   "presence":0.0,
+   "visibility":0.9718661904,
+   "x":-0.2192838192,
+   "y":0.7544143796,
+   "z":0.0542240329
+  },
+  "29":{
+   "DESCRIPTOR":{
+    "containing_type":null,
+    "enum_types":{
+
+    },
+    "enum_types_by_name":{
+
+    },
+    "enum_values_by_name":{
+
+    },
+    "extension_ranges":[
+
+    ],
+    "extensions":{
+
+    },
+    "extensions_by_name":{
+
+    },
+    "fields":{
+
+    },
+    "fields_by_camelcase_name":{
+
+    },
+    "fields_by_name":{
+
+    },
+    "fields_by_number":{
+
+    },
+    "file":{
+     "dependencies":{
+
+     },
+     "enum_types_by_name":{
+
+     },
+     "extensions_by_name":{
+
+     },
+     "has_options":true,
+     "message_types_by_name":{
+
+     },
+     "name":"mediapipe\/framework\/formats\/landmark.proto",
+     "package":"mediapipe",
+     "pool":{
+
+     },
+     "public_dependencies":{
+
+     },
+     "serialized_pb":"\n*mediapipe\/framework\/formats\/landmark.proto\u0012\tmediapipe\"Q\n\bLandmark\u0012\t\n\u0001x\u0018\u0001 \u0001(\u0002\u0012\t\n\u0001y\u0018\u0002 \u0001(\u0002\u0012\t\n\u0001z\u0018\u0003 \u0001(\u0002\u0012\u0012\n\nvisibility\u0018\u0004 \u0001(\u0002\u0012\u0010\n\bpresence\u0018\u0005 \u0001(\u0002\"5\n\fLandmarkList\u0012%\n\blandmark\u0018\u0001 \u0003(\u000b2\u0013.mediapipe.Landmark\"H\n\u0016LandmarkListCollection\u0012.\n\rlandmark_list\u0018\u0001 \u0003(\u000b2\u0017.mediapipe.LandmarkList\"[\n\u0012NormalizedLandmark\u0012\t\n\u0001x\u0018\u0001 \u0001(\u0002\u0012\t\n\u0001y\u0018\u0002 \u0001(\u0002\u0012\t\n\u0001z\u0018\u0003 \u0001(\u0002\u0012\u0012\n\nvisibility\u0018\u0004 \u0001(\u0002\u0012\u0010\n\bpresence\u0018\u0005 \u0001(\u0002\"I\n\u0016NormalizedLandmarkList\u0012\/\n\blandmark\u0018\u0001 \u0003(\u000b2\u001d.mediapipe.NormalizedLandmark\"\\\n NormalizedLandmarkListCollection\u00128\n\rlandmark_list\u0018\u0001 \u0003(\u000b2!.mediapipe.NormalizedLandmarkListB3\n\"com.google.mediapipe.formats.protoB\rLandmarkProto",
+     "services_by_name":{
+
+     },
+     "syntax":"proto2"
+    },
+    "full_name":"mediapipe.Landmark",
+    "has_options":false,
+    "is_extendable":false,
+    "name":"Landmark",
+    "nested_types":{
+
+    },
+    "nested_types_by_name":{
+
+    },
+    "oneofs":{
+
+    },
+    "oneofs_by_name":{
+
+    },
+    "syntax":"proto2"
+   },
+   "presence":0.0,
+   "visibility":0.7357354164,
+   "x":0.0702525675,
+   "y":0.7867224813,
+   "z":0.2134359926
+  },
+  "30":{
+   "DESCRIPTOR":{
+    "containing_type":null,
+    "enum_types":{
+
+    },
+    "enum_types_by_name":{
+
+    },
+    "enum_values_by_name":{
+
+    },
+    "extension_ranges":[
+
+    ],
+    "extensions":{
+
+    },
+    "extensions_by_name":{
+
+    },
+    "fields":{
+
+    },
+    "fields_by_camelcase_name":{
+
+    },
+    "fields_by_name":{
+
+    },
+    "fields_by_number":{
+
+    },
+    "file":{
+     "dependencies":{
+
+     },
+     "enum_types_by_name":{
+
+     },
+     "extensions_by_name":{
+
+     },
+     "has_options":true,
+     "message_types_by_name":{
+
+     },
+     "name":"mediapipe\/framework\/formats\/landmark.proto",
+     "package":"mediapipe",
+     "pool":{
+
+     },
+     "public_dependencies":{
+
+     },
+     "serialized_pb":"\n*mediapipe\/framework\/formats\/landmark.proto\u0012\tmediapipe\"Q\n\bLandmark\u0012\t\n\u0001x\u0018\u0001 \u0001(\u0002\u0012\t\n\u0001y\u0018\u0002 \u0001(\u0002\u0012\t\n\u0001z\u0018\u0003 \u0001(\u0002\u0012\u0012\n\nvisibility\u0018\u0004 \u0001(\u0002\u0012\u0010\n\bpresence\u0018\u0005 \u0001(\u0002\"5\n\fLandmarkList\u0012%\n\blandmark\u0018\u0001 \u0003(\u000b2\u0013.mediapipe.Landmark\"H\n\u0016LandmarkListCollection\u0012.\n\rlandmark_list\u0018\u0001 \u0003(\u000b2\u0017.mediapipe.LandmarkList\"[\n\u0012NormalizedLandmark\u0012\t\n\u0001x\u0018\u0001 \u0001(\u0002\u0012\t\n\u0001y\u0018\u0002 \u0001(\u0002\u0012\t\n\u0001z\u0018\u0003 \u0001(\u0002\u0012\u0012\n\nvisibility\u0018\u0004 \u0001(\u0002\u0012\u0010\n\bpresence\u0018\u0005 \u0001(\u0002\"I\n\u0016NormalizedLandmarkList\u0012\/\n\blandmark\u0018\u0001 \u0003(\u000b2\u001d.mediapipe.NormalizedLandmark\"\\\n NormalizedLandmarkListCollection\u00128\n\rlandmark_list\u0018\u0001 \u0003(\u000b2!.mediapipe.NormalizedLandmarkListB3\n\"com.google.mediapipe.formats.protoB\rLandmarkProto",
+     "services_by_name":{
+
+     },
+     "syntax":"proto2"
+    },
+    "full_name":"mediapipe.Landmark",
+    "has_options":false,
+    "is_extendable":false,
+    "name":"Landmark",
+    "nested_types":{
+
+    },
+    "nested_types_by_name":{
+
+    },
+    "oneofs":{
+
+    },
+    "oneofs_by_name":{
+
+    },
+    "syntax":"proto2"
+   },
+   "presence":0.0,
+   "visibility":0.6414654255,
+   "x":-0.2266821265,
+   "y":0.8003200889,
+   "z":0.0543936379
+  },
+  "31":{
+   "DESCRIPTOR":{
+    "containing_type":null,
+    "enum_types":{
+
+    },
+    "enum_types_by_name":{
+
+    },
+    "enum_values_by_name":{
+
+    },
+    "extension_ranges":[
+
+    ],
+    "extensions":{
+
+    },
+    "extensions_by_name":{
+
+    },
+    "fields":{
+
+    },
+    "fields_by_camelcase_name":{
+
+    },
+    "fields_by_name":{
+
+    },
+    "fields_by_number":{
+
+    },
+    "file":{
+     "dependencies":{
+
+     },
+     "enum_types_by_name":{
+
+     },
+     "extensions_by_name":{
+
+     },
+     "has_options":true,
+     "message_types_by_name":{
+
+     },
+     "name":"mediapipe\/framework\/formats\/landmark.proto",
+     "package":"mediapipe",
+     "pool":{
+
+     },
+     "public_dependencies":{
+
+     },
+     "serialized_pb":"\n*mediapipe\/framework\/formats\/landmark.proto\u0012\tmediapipe\"Q\n\bLandmark\u0012\t\n\u0001x\u0018\u0001 \u0001(\u0002\u0012\t\n\u0001y\u0018\u0002 \u0001(\u0002\u0012\t\n\u0001z\u0018\u0003 \u0001(\u0002\u0012\u0012\n\nvisibility\u0018\u0004 \u0001(\u0002\u0012\u0010\n\bpresence\u0018\u0005 \u0001(\u0002\"5\n\fLandmarkList\u0012%\n\blandmark\u0018\u0001 \u0003(\u000b2\u0013.mediapipe.Landmark\"H\n\u0016LandmarkListCollection\u0012.\n\rlandmark_list\u0018\u0001 \u0003(\u000b2\u0017.mediapipe.LandmarkList\"[\n\u0012NormalizedLandmark\u0012\t\n\u0001x\u0018\u0001 \u0001(\u0002\u0012\t\n\u0001y\u0018\u0002 \u0001(\u0002\u0012\t\n\u0001z\u0018\u0003 \u0001(\u0002\u0012\u0012\n\nvisibility\u0018\u0004 \u0001(\u0002\u0012\u0010\n\bpresence\u0018\u0005 \u0001(\u0002\"I\n\u0016NormalizedLandmarkList\u0012\/\n\blandmark\u0018\u0001 \u0003(\u000b2\u001d.mediapipe.NormalizedLandmark\"\\\n NormalizedLandmarkListCollection\u00128\n\rlandmark_list\u0018\u0001 \u0003(\u000b2!.mediapipe.NormalizedLandmarkListB3\n\"com.google.mediapipe.formats.protoB\rLandmarkProto",
+     "services_by_name":{
+
+     },
+     "syntax":"proto2"
+    },
+    "full_name":"mediapipe.Landmark",
+    "has_options":false,
+    "is_extendable":false,
+    "name":"Landmark",
+    "nested_types":{
+
+    },
+    "nested_types_by_name":{
+
+    },
+    "oneofs":{
+
+    },
+    "oneofs_by_name":{
+
+    },
+    "syntax":"proto2"
+   },
+   "presence":0.0,
+   "visibility":0.9467778802,
+   "x":0.0802488774,
+   "y":0.8458732963,
+   "z":0.0894502923
+  },
+  "32":{
+   "DESCRIPTOR":{
+    "containing_type":null,
+    "enum_types":{
+
+    },
+    "enum_types_by_name":{
+
+    },
+    "enum_values_by_name":{
+
+    },
+    "extension_ranges":[
+
+    ],
+    "extensions":{
+
+    },
+    "extensions_by_name":{
+
+    },
+    "fields":{
+
+    },
+    "fields_by_camelcase_name":{
+
+    },
+    "fields_by_name":{
+
+    },
+    "fields_by_number":{
+
+    },
+    "file":{
+     "dependencies":{
+
+     },
+     "enum_types_by_name":{
+
+     },
+     "extensions_by_name":{
+
+     },
+     "has_options":true,
+     "message_types_by_name":{
+
+     },
+     "name":"mediapipe\/framework\/formats\/landmark.proto",
+     "package":"mediapipe",
+     "pool":{
+
+     },
+     "public_dependencies":{
+
+     },
+     "serialized_pb":"\n*mediapipe\/framework\/formats\/landmark.proto\u0012\tmediapipe\"Q\n\bLandmark\u0012\t\n\u0001x\u0018\u0001 \u0001(\u0002\u0012\t\n\u0001y\u0018\u0002 \u0001(\u0002\u0012\t\n\u0001z\u0018\u0003 \u0001(\u0002\u0012\u0012\n\nvisibility\u0018\u0004 \u0001(\u0002\u0012\u0010\n\bpresence\u0018\u0005 \u0001(\u0002\"5\n\fLandmarkList\u0012%\n\blandmark\u0018\u0001 \u0003(\u000b2\u0013.mediapipe.Landmark\"H\n\u0016LandmarkListCollection\u0012.\n\rlandmark_list\u0018\u0001 \u0003(\u000b2\u0017.mediapipe.LandmarkList\"[\n\u0012NormalizedLandmark\u0012\t\n\u0001x\u0018\u0001 \u0001(\u0002\u0012\t\n\u0001y\u0018\u0002 \u0001(\u0002\u0012\t\n\u0001z\u0018\u0003 \u0001(\u0002\u0012\u0012\n\nvisibility\u0018\u0004 \u0001(\u0002\u0012\u0010\n\bpresence\u0018\u0005 \u0001(\u0002\"I\n\u0016NormalizedLandmarkList\u0012\/\n\blandmark\u0018\u0001 \u0003(\u000b2\u001d.mediapipe.NormalizedLandmark\"\\\n NormalizedLandmarkListCollection\u00128\n\rlandmark_list\u0018\u0001 \u0003(\u000b2!.mediapipe.NormalizedLandmarkListB3\n\"com.google.mediapipe.formats.protoB\rLandmarkProto",
+     "services_by_name":{
+
+     },
+     "syntax":"proto2"
+    },
+    "full_name":"mediapipe.Landmark",
+    "has_options":false,
+    "is_extendable":false,
+    "name":"Landmark",
+    "nested_types":{
+
+    },
+    "nested_types_by_name":{
+
+    },
+    "oneofs":{
+
+    },
+    "oneofs_by_name":{
+
+    },
+    "syntax":"proto2"
+   },
+   "presence":0.0,
+   "visibility":0.9492146373,
+   "x":-0.2473044693,
+   "y":0.8552026749,
+   "z":-0.0899157897
+  }
+ }
+}
