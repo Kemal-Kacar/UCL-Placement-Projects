@@ -5,7 +5,7 @@ from pathlib import Path
 import csv
 import json
 
-# all in one big package that has everything, mo-cap to frame data, to organising all data, to b a r s i n g. 
+# all in one big package that has everything, mo-cap to frame data, to organising all data, to b a r s i n g.
 
 # mediapipe stuff, dependencies.
 mp_drawing = mp.solutions.drawing_utils
@@ -55,7 +55,7 @@ cap.release()
 
 frame_counter = int(cap.get(cv2.CAP_PROP_FRAME_COUNT))
 # currently hardcoded, can get from the file properties, am lazy atm.
-frame_number = 5560
+frame_number = int(cap.get(cv2.CAP_PROP_FRAME_COUNT))
 header = ["landmark", "x", "y", "z", "distance"]
 with open("cords_tracker.csv", "w", newline="") as csvfile:
     writer = csv.writer(csvfile)

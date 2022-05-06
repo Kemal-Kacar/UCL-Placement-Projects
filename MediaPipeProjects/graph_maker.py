@@ -3,11 +3,9 @@ import pandas as pd
 
 with open("Landmark_CSVs/Landmark0.csv") as f:
     df = pd.read_csv(f)
-    print(df.significance)
 
-sig_or_nah = [0, 1]
 
-plt.plot(df.significance, sig_or_nah, ":", label="yeet")
+df.plot(x=, y=df.significance, kind="line")
 plt.title("n y o o m ! !")
 plt.ylabel("significance")
 plt.xlabel("frames")
