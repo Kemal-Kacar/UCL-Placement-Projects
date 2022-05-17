@@ -1,5 +1,6 @@
 from threading import Thread
 import cv2
+import time
 
 
 class VideoGet:
@@ -7,7 +8,7 @@ class VideoGet:
     Class that continuously gets frames from a VideoCapture object
     with a dedicated thread.
     """
-    def __init__(self, src=0):
+    def __init__(self, src=""):
         self.stream = cv2.VideoCapture(src)
         (self.grabbed, self.frame) = self.stream.read()
         self.stopped = False

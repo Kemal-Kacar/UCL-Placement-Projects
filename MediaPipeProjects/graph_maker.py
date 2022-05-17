@@ -1,11 +1,13 @@
 import matplotlib.pyplot as plt
 import pandas as pd
 
-with open("Landmark_CSVs/Landmark0.csv") as f:
+with open("FULLBODY_Data/FB_Landmark_CSVs/FB_Landmark5.csv") as f:
     df = pd.read_csv(f)
 
+xpoints = df.significance
+ypoints = df.distance
 
-df.plot(x=a, y=df.significance, kind="line")
+plt.plot(xpoints, ypoints, ls=":")
 plt.title("n y o o m ! !")
 plt.ylabel("significance")
 plt.xlabel("frames")
