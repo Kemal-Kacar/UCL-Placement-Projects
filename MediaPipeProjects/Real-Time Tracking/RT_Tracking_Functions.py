@@ -1,17 +1,17 @@
-import struct
-import time
+# OS based imports.
 from glob import glob
 from os import remove
 import cv2
 from path import Path
-import csv
 from threading import Thread
-import mediapipe as mp
+# Time and tracking based imports.
 from time import sleep
-import pickle
-import pandas as pd
-from timeit import default_timer as timer
+import time
 from datetime import datetime
+from timeit import default_timer as timer
+# Dependencies and mediapipe imports.
+import mediapipe as mp
+import pickle
 import numpy as np
 
                     ### WHERE I LEFT OFF ###
@@ -34,32 +34,35 @@ import numpy as np
 #         date = datetime.now().timestamp()
 #         pickle.dump(dataframe, f)
 
-m_list = []
-
 
 class ThreadVideoProcess:
+    """
+    Integrating the video processing into a single thread.
+    Currently not very useful as it is simply too fast to extract data.
+    May have changed due to the optimisations done for real-time processing procedures.
+    """
     def __init__(self, video_id=""):
         self.video_id = video_id
 
-        self.vid_cap = cv2.VideoCapture(video_id)
+        self.vid_cap = cv2.VideoCapture(video_id)  # Integrate the cv2 capture method.
         if self.vid_cap.isOpened() is False:
             print("[Exiting]: Error loading the video.")
 
-        self.grabbed, self.frame = self.vid_cap.read()
+        self.grabbed, self.frame = self.vid_cap.read()  # Read the frame information.
         if self.grabbed is False:
             print("No more frames")
             exit(0)
 
-        self.stopped = True
+        self.stopped = True  # Class integrated cv2.release function.
 
-        self.t = Thread(target=self.update, args=())
+        self.t = Thread(target=self.update, args=())  # Threading line for the update function.
         self.t.daemon = True
 
-    def start(self):
+    def start(self):  # cv2 isOpened functionality.
         self.stopped = False
         self.t.start()
 
-    def update(self):
+    def update(self):  # Frame updater for the threading functionality.
         while True:
             if self.stopped is True:
                 break
@@ -70,21 +73,26 @@ class ThreadVideoProcess:
                 break
         self.vid_cap.release()
 
-    def read(self):
+    def read(self):  # Frame reader functionality shadowing cv2.read function.
         return self.frame
 
-    def stop(self):
+    def stop(self):  # cv2.release function.
         self.stopped = True
 
 
 def file_wipe(directory):
     # file deletion function.
+    # Used to empty the frame files or any files.
+    # Simply input the path of file, absolute and relative works.
     for file in glob(directory):
-        remove(file)
+        remove(Path(file))
 
 
 def frame_maker(file, variable_to_follow, f_num):
     # file creation function.
+    # Currently underutilised. Function file to write binary data.
+    # Can be made into frame-by-frame data creation/collection.
+    # just add {f_num} after the frame string.
     with open(Path(f"landmark_data/{file}/frame.dat"), "wb") as f:
         dataframe = list(variable_to_follow)
         date = datetime.now().timestamp()
@@ -92,8 +100,8 @@ def frame_maker(file, variable_to_follow, f_num):
 
 
 def location_extractor(markers):
-    m_list.append(time.time())
-    # with open(Path(f"landmark_data/{file}/loc.dat"), "ab") as f:
+    # extracts the landmark information onto an array.
+    # takes the x/y/z information of each marker and appends relative to how many markers there are.
     for loc in range(len(markers)):
         m_list.append(markers[loc].x)
         m_list.append(markers[loc].y)
@@ -101,7 +109,7 @@ def location_extractor(markers):
 
 
 def holistic_mo_cap_mp(video):
-    start_time = timer()
+    start_time = timer()  # start the time. Just for visualisation, can be deleted to get a fraction of speed.
     # mediapipe motion capture function.
     # mp dependencies.
     mp_drawing = mp.solutions.drawing_utils
@@ -113,11 +121,12 @@ def holistic_mo_cap_mp(video):
     cap = cv2.VideoCapture(video)
     sleep(1.0)
     # main body of tracking code.
-    with mp_face_mesh.FaceMesh(
+    with mp_face_mesh.FaceMesh(  # Tweak these numbers for more/less accurate tracking.
             max_num_faces=2,
             refine_landmarks=True,
             min_detection_confidence=0.8,
             min_tracking_confidence=0.8) as face_mesh:
+        # Visually show on the command window of the frame iteration. Can be deleted for speed.
         num_frames_processed = 0
         while cap.isOpened():
             success, image = cap.read()
@@ -130,6 +139,7 @@ def holistic_mo_cap_mp(video):
             # Draw the face mesh annotations on the image.
             image.flags.writeable = True
             image = cv2.cvtColor(image, cv2.COLOR_RGB2BGR)
+            # a lot of these mp functions I am not too knowledgeable. Leave them be.
             if results.multi_face_landmarks:
                 for face_landmarks in results.multi_face_landmarks:
                     num_frames_processed += 1
@@ -154,27 +164,20 @@ def holistic_mo_cap_mp(video):
                         landmark_drawing_spec=None,
                         connection_drawing_spec=mp_drawing_styles
                             .get_default_face_mesh_iris_connections_style())
-            # real time data extraction
+                    # real time data extraction
                     if cap.isOpened():
                         print(num_frames_processed)
+                        m_list.append(int(time.perf_counter_ns())/1000000)  # track the time and append to array.
+                        # Call "frame_maker" function to make frame information files. pure dump function.
                         frame_maker("face", results.multi_face_landmarks[0].landmark, num_frames_processed)
+                        # Call "location_extractor" function to extract specific landmark information
+                        # as annotated on the function itself.
                         location_extractor(results.multi_face_landmarks[0].landmark)
+                        # Show the time in window for us to see the change. Redundant, delete for speed.
+                        print((time.perf_counter_ns())/1000000)
                     else:
                         continue
-
-            # frame_maker("left_hand.csv", list(results.left_hand_landmarks.landmark))
-            # frame_maker("right_hand.csv", list(results.right_hand_landmarks.landmark))
-
-            # frame_maker("pose.csv", list(results.pose_landmarks.landmark))
-            # Flip the image horizontally for a selfie-view display.
             cv2.imshow('MediaPipe Holistic', cv2.flip(image, 1))
-            # nmarkers = len( results.multi_face_landmarks[0].landmark)
-            # xtracted = list()
-            # for ii in range(0, nmarkers):
-            #     xtracted.append(results.multi_face_landmarks[0].landmark[ii].x)
-            #     xtracted.append(results.multi_face_landmarks[0].landmark[ii].y)
-            #     xtracted.append(results.multi_face_landmarks[0].landmark[ii].z)
-            #
             if cv2.waitKey(5) & 0xFF == 27:
                 break
         cap.release()
@@ -182,14 +185,12 @@ def holistic_mo_cap_mp(video):
         print(end_time-start_time)
 
 
-file_wipe("landmark_data/face/*")
-holistic_mo_cap_mp(0)
-csv_m_list = m_list
-a = np.array(m_list, 'float32')
-with open(Path(f"landmark_data/face/loc.dat"), "wb") as y:
+# Main calling section, all code happens through these lines.
+file_wipe("landmark_data/face/*")                     # Call file_wipe and delete the directory.
+m_list = []                                           # empty array to fill with the information.
+holistic_mo_cap_mp(0)                                 # Start motion capture.
+a = np.array(m_list, 'float32')                       # convert the binary datafile into np.array for better extraction.
+with open(Path(f"landmark_data/face/loc.dat"), "wb") as y:  # write the np.array list to the file.
     a.tofile(y)
 
-with open(Path(f"landmark_data/face/markercsv.csv"), "w", newline="") as csvW:
-    mlistdf = pd.DataFrame(csv_m_list)
-    mlistdf.to_csv(csvW, index=False)
 
