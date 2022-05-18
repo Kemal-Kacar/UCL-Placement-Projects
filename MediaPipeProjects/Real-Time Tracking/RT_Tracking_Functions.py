@@ -13,6 +13,7 @@ from timeit import default_timer as timer
 import mediapipe as mp
 import pickle
 import numpy as np
+import csv
 
                     ### WHERE I LEFT OFF ###
 # TRYING TO APPENDED WRITE TO BINARY FILE FOR THE REAL-TIME TRACKING.
@@ -33,6 +34,7 @@ import numpy as np
 #         dataframe = list(variable_to_follow)
 #         date = datetime.now().timestamp()
 #         pickle.dump(dataframe, f)
+# make a "README" file including any identifiable information.
 
 
 class ThreadVideoProcess:
@@ -109,7 +111,6 @@ def location_extractor(markers):
 
 
 def holistic_mo_cap_mp(video):
-    start_time = timer()  # start the time. Just for visualisation, can be deleted to get a fraction of speed.
     # mediapipe motion capture function.
     # mp dependencies.
     mp_drawing = mp.solutions.drawing_utils
@@ -181,16 +182,27 @@ def holistic_mo_cap_mp(video):
             if cv2.waitKey(5) & 0xFF == 27:
                 break
         cap.release()
-        end_time = timer()
-        print(end_time-start_time)
 
 
 # Main calling section, all code happens through these lines.
+# BE CAREFUL OF THIS LINE, I HAVE IT FOR TESTING PURPOSES, DO NOT RUN IF ACTUALLY USING.
 file_wipe("landmark_data/face/*")                     # Call file_wipe and delete the directory.
 m_list = []                                           # empty array to fill with the information.
-holistic_mo_cap_mp(0)                                 # Start motion capture.
+start_time = timer()  # start the time. Just for visualisation, can be deleted to get a fraction of speed.
+holistic_mo_cap_mp(0)                             # Start motion capture.
+end_time = timer()
 a = np.array(m_list, 'float32')                       # convert the binary datafile into np.array for better extraction.
-with open(Path(f"landmark_data/face/loc.dat"), "wb") as y:  # write the np.array list to the file.
+# now = datetime.now()
+file_date = str(datetime.now().strftime("_%d_%m_%Y-%H_%M_%S_"))
+binary_file = f"landmark_data/face/{file_date}loc.dat"
+with open(binary_file, "wb") as y:  # write the np.array list to the file.
     a.tofile(y)
 
 
+with open(Path(f"landmark_data/face/{file_date}README_loc.txt"), "w") as readme:
+    readme.write(f"Tracked information: x,y,z coordinates and time at the start of tracking. \n"
+                 f"Used Face-Tracking solutions of mediapipe. \n"
+                 f"Each frame is 1435 (1 for time, 1434 for x/y/z, 478 each) data long. \n"
+                 f"Number of processed frames: {len(m_list)/1435} \n"
+                 f"Number of total markers: 478 \n"
+                 f"Total time taken: {end_time-start_time} \n")
