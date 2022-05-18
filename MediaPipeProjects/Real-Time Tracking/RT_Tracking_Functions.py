@@ -198,11 +198,11 @@ binary_file = f"landmark_data/face/{file_date}loc.dat"
 with open(binary_file, "wb") as y:  # write the np.array list to the file.
     a.tofile(y)
 
-
 with open(Path(f"landmark_data/face/{file_date}README_loc.txt"), "w") as readme:
     readme.write(f"Tracked information: x,y,z coordinates and time at the start of tracking. \n"
                  f"Used Face-Tracking solutions of mediapipe. \n"
+                 f"File format: float32, little-endian, .dat file. \n"
                  f"Each frame is 1435 (1 for time, 1434 for x/y/z, 478 each) data long. \n"
                  f"Number of processed frames: {len(m_list)/1435} \n"
-                 f"Number of total markers: 478 \n"
+                 f"Number of total markers: {(1435-1)/3} \n"
                  f"Total time taken: {end_time-start_time} \n")
